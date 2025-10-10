@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "CakeBuild\CakeBuild.csproj", "{06F414D9-5052-470D-8983-B82738A5D386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expressions", "Expressions\Expressions.csproj", "{45083C30-2BA0-415E-A2AA-A5B984AA6B76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06F414D9-5052-470D-8983-B82738A5D386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06F414D9-5052-470D-8983-B82738A5D386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06F414D9-5052-470D-8983-B82738A5D386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06F414D9-5052-470D-8983-B82738A5D386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45083C30-2BA0-415E-A2AA-A5B984AA6B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45083C30-2BA0-415E-A2AA-A5B984AA6B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45083C30-2BA0-415E-A2AA-A5B984AA6B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45083C30-2BA0-415E-A2AA-A5B984AA6B76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
