@@ -1,4 +1,6 @@
-﻿using Vintagestory.API.Common;
+﻿using HarmonyLib;
+using Vintagestory.API.Client;
+using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 using Vintagestory.Server;
@@ -7,13 +9,33 @@ namespace Expressions;
 
 public class ExpressionsModSystem : ModSystem
 {
-    // Called on server and client
-    // Useful for registering block/entity classes on both sides
-    public override void Start(ICoreAPI api)
+    public override void StartClientSide(ICoreClientAPI api)
     {
-        api.Logger.Notification("Hello from template mod: " + api.Side);
+        var harmony = new Harmony(Mod.Info.ModID);
+
+        var method =
+            AccessTools.Method(typeof(GuiDialogCreateCharacter), "ComposeGuis");
+
+        var patch1 = AccessTools.Method(typeof(ExpressionsModSystem), nameof(Prefix));
+
+        harmony.Patch(method, new HarmonyMethod(patch1));
+
+        base.StartClientSide(api);
     }
 
+    private static void Prefix(GuiDialogCreateCharacter __instance)
+    {
+        var dlgHeightRef = AccessTools.FieldRefAccess<GuiDialogCreateCharacter, int>("dlgHeight");
+
+        // Modify it just before the method runs
+        dlgHeightRef(__instance) = GetCustomHeight(__instance);
+    }
+
+    private static int GetCustomHeight(GuiDialogCreateCharacter instance)
+    {
+        return 625;
+    }
+    
     public override void StartServerSide(ICoreServerAPI api)
     {
         api.ChatCommands.Create("expressions").WithDescription("Set your expression")
