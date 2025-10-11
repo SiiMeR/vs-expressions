@@ -169,6 +169,12 @@
           }
         },
         {
+          "code": "eyelashes",
+          "shape": {
+            "base": "expressions:eye/eyelashes"
+          }
+        },
+        {
           "code": "fierce",
           "shape": {
             "base": "expressions:eye/fierce"

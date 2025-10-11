@@ -35,7 +35,7 @@ public class ExpressionsModSystem : ModSystem
     {
         return 625;
     }
-    
+
     public override void StartServerSide(ICoreServerAPI api)
     {
         api.ChatCommands.Create("expressions").WithDescription("Set your expression")
@@ -59,36 +59,49 @@ public class ExpressionsModSystem : ModSystem
     {
         var serverPlayer = args.Caller.Player as ServerPlayer;
         var text = args[0].ToString();
-        UpdateExpression(serverPlayer, "mouth", text);
-        return TextCommandResult.Success("Set mouth to " + text);
+        var result = UpdateExpression(serverPlayer, "mouth", text);
+        return result
+            ? TextCommandResult.Success("Set mouth to " + text)
+            : TextCommandResult.Error("No such style for " + text);
     }
 
     private TextCommandResult OnEyeCommand(TextCommandCallingArgs args)
     {
         var serverPlayer = args.Caller.Player as ServerPlayer;
         var text = args[0].ToString();
-        UpdateExpression(serverPlayer, "eye", text);
-        return TextCommandResult.Success("Set eye to " + text);
+        var result = UpdateExpression(serverPlayer, "eye", text);
+        return result
+            ? TextCommandResult.Success("Set eye to " + text)
+            : TextCommandResult.Error("No such style for " + text);
     }
 
     private TextCommandResult OnEyebrowCommand(TextCommandCallingArgs args)
     {
         var serverPlayer = args.Caller.Player as ServerPlayer;
         var text = args[0].ToString();
-        UpdateExpression(serverPlayer, "eyebrow", text);
-        return TextCommandResult.Success("Set eyebrow to " + text);
+        var result = UpdateExpression(serverPlayer, "eyebrow", text);
+        return result
+            ? TextCommandResult.Success("Set eyebrow to " + text)
+            : TextCommandResult.Error("No such style for " + text);
     }
 
-    public void UpdateExpression(IServerPlayer fromPlayer, string facepart, string value)
+    public bool UpdateExpression(IServerPlayer fromPlayer, string facepart, string value)
     {
         var behavior = fromPlayer.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
         if (behavior == null)
         {
-            return;
+            return false;
+        }
+
+        if (!behavior.AvailableSkinPartsByCode[facepart].VariantsByCode.ContainsKey(value))
+        {
+            return false;
         }
 
         behavior.selectSkinPart(facepart, value);
         fromPlayer.Entity.WatchedAttributes.MarkPathDirty("skinConfig");
         fromPlayer.BroadcastPlayerData();
+
+        return true;
     }
 }
