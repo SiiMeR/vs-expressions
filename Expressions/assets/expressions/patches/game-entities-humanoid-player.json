@@ -1,0 +1,386 @@
+[
+  {
+    "op": "remove",
+    "path": "/attributes/skinnableParts/7",
+    "file": "game:entities/humanoid/player.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/skinnableParts/-",
+    "value": {
+      "code": "eyebrow",
+      "type": "shape",
+      "variants": [
+        {
+          "code": "adequate",
+          "shape": {
+            "base": "expressions:eyebrow/adequate"
+          }
+        },
+        {
+          "code": "angry",
+          "shape": {
+            "base": "expressions:eyebrow/angry"
+          }
+        },
+        {
+          "code": "caring",
+          "shape": {
+            "base": "expressions:eyebrow/caring"
+          }
+        },
+        {
+          "code": "determined",
+          "shape": {
+            "base": "expressions:eyebrow/determined"
+          }
+        },
+        {
+          "code": "exhausted",
+          "shape": {
+            "base": "expressions:eyebrow/exhausted"
+          }
+        },
+        {
+          "code": "fierce",
+          "shape": {
+            "base": "expressions:eyebrow/fierce"
+          }
+        },
+        {
+          "code": "grin",
+          "shape": {
+            "base": "expressions:eyebrow/grin"
+          }
+        },
+        {
+          "code": "indifferent",
+          "shape": {
+            "base": "expressions:eyebrow/indifferent"
+          }
+        },
+        {
+          "code": "kind",
+          "shape": {
+            "base": "expressions:eyebrow/kind"
+          }
+        },
+        {
+          "code": "mellow",
+          "shape": {
+            "base": "expressions:eyebrow/mellow"
+          }
+        },
+        {
+          "code": "neutral",
+          "shape": {
+            "base": "expressions:eyebrow/neutral"
+          }
+        },
+        {
+          "code": "sad",
+          "shape": {
+            "base": "expressions:eyebrow/sad"
+          }
+        },
+        {
+          "code": "serious",
+          "shape": {
+            "base": "expressions:eyebrow/serious"
+          }
+        },
+        {
+          "code": "smirk",
+          "shape": {
+            "base": "expressions:eyebrow/smirk"
+          }
+        },
+        {
+          "code": "thoughtful",
+          "shape": {
+            "base": "expressions:eyebrow/thoughtful"
+          }
+        },
+        {
+          "code": "tired",
+          "shape": {
+            "base": "expressions:eyebrow/tired"
+          }
+        },
+        {
+          "code": "upset",
+          "shape": {
+            "base": "expressions:eyebrow/upset"
+          }
+        },
+        {
+          "code": "very-sad",
+          "shape": {
+            "base": "expressions:eyebrow/very-sad"
+          }
+        },
+        {
+          "code": "weary",
+          "shape": {
+            "base": "expressions:eyebrow/weary"
+          }
+        }
+      ]
+    },
+    "file": "game:entities/humanoid/player.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/skinnableParts/-",
+    "value": {
+      "code": "eye",
+      "type": "shape",
+      "variants": [
+        {
+          "code": "adequate",
+          "shape": {
+            "base": "expressions:eye/adequate"
+          }
+        },
+        {
+          "code": "angry",
+          "shape": {
+            "base": "expressions:eye/angry"
+          }
+        },
+        {
+          "code": "caring",
+          "shape": {
+            "base": "expressions:eye/caring"
+          }
+        },
+        {
+          "code": "determined",
+          "shape": {
+            "base": "expressions:eye/determined"
+          }
+        },
+        {
+          "code": "exhausted",
+          "shape": {
+            "base": "expressions:eye/exhausted"
+          }
+        },
+        {
+          "code": "fierce",
+          "shape": {
+            "base": "expressions:eye/fierce"
+          }
+        },
+        {
+          "code": "grin",
+          "shape": {
+            "base": "expressions:eye/grin"
+          }
+        },
+        {
+          "code": "indifferent",
+          "shape": {
+            "base": "expressions:eye/indifferent"
+          }
+        },
+        {
+          "code": "kind",
+          "shape": {
+            "base": "expressions:eye/kind"
+          }
+        },
+        {
+          "code": "mellow",
+          "shape": {
+            "base": "expressions:eye/mellow"
+          }
+        },
+        {
+          "code": "neutral",
+          "shape": {
+            "base": "expressions:eye/neutral"
+          }
+        },
+        {
+          "code": "sad",
+          "shape": {
+            "base": "expressions:eye/sad"
+          }
+        },
+        {
+          "code": "serious",
+          "shape": {
+            "base": "expressions:eye/serious"
+          }
+        },
+        {
+          "code": "smirk",
+          "shape": {
+            "base": "expressions:eye/smirk"
+          }
+        },
+        {
+          "code": "thoughtful",
+          "shape": {
+            "base": "expressions:eye/thoughtful"
+          }
+        },
+        {
+          "code": "tired",
+          "shape": {
+            "base": "expressions:eye/tired"
+          }
+        },
+        {
+          "code": "upset",
+          "shape": {
+            "base": "expressions:eye/upset"
+          }
+        },
+        {
+          "code": "very-sad",
+          "shape": {
+            "base": "expressions:eye/very-sad"
+          }
+        },
+        {
+          "code": "weary",
+          "shape": {
+            "base": "expressions:eye/weary"
+          }
+        }
+      ]
+    },
+    "file": "game:entities/humanoid/player.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/skinnableParts/-",
+    "value": {
+      "code": "mouth",
+      "type": "shape",
+      "variants": [
+        {
+          "code": "adequate",
+          "shape": {
+            "base": "expressions:mouth/adequate"
+          }
+        },
+        {
+          "code": "angry",
+          "shape": {
+            "base": "expressions:mouth/angry"
+          }
+        },
+        {
+          "code": "caring",
+          "shape": {
+            "base": "expressions:mouth/caring"
+          }
+        },
+        {
+          "code": "determined",
+          "shape": {
+            "base": "expressions:mouth/determined"
+          }
+        },
+        {
+          "code": "exhausted",
+          "shape": {
+            "base": "expressions:mouth/exhausted"
+          }
+        },
+        {
+          "code": "fierce",
+          "shape": {
+            "base": "expressions:mouth/fierce"
+          }
+        },
+        {
+          "code": "grin",
+          "shape": {
+            "base": "expressions:mouth/grin"
+          }
+        },
+        {
+          "code": "indifferent",
+          "shape": {
+            "base": "expressions:mouth/indifferent"
+          }
+        },
+        {
+          "code": "kind",
+          "shape": {
+            "base": "expressions:mouth/kind"
+          }
+        },
+        {
+          "code": "mellow",
+          "shape": {
+            "base": "expressions:mouth/mellow"
+          }
+        },
+        {
+          "code": "neutral",
+          "shape": {
+            "base": "expressions:mouth/neutral"
+          }
+        },
+        {
+          "code": "sad",
+          "shape": {
+            "base": "expressions:mouth/sad"
+          }
+        },
+        {
+          "code": "serious",
+          "shape": {
+            "base": "expressions:mouth/serious"
+          }
+        },
+        {
+          "code": "smirk",
+          "shape": {
+            "base": "expressions:mouth/smirk"
+          }
+        },
+        {
+          "code": "thoughtful",
+          "shape": {
+            "base": "expressions:mouth/thoughtful"
+          }
+        },
+        {
+          "code": "tired",
+          "shape": {
+            "base": "expressions:mouth/tired"
+          }
+        },
+        {
+          "code": "upset",
+          "shape": {
+            "base": "expressions:mouth/upset"
+          }
+        },
+        {
+          "code": "very-sad",
+          "shape": {
+            "base": "expressions:mouth/very-sad"
+          }
+        },
+        {
+          "code": "weary",
+          "shape": {
+            "base": "expressions:mouth/weary"
+          }
+        }
+      ]
+    },
+    "file": "game:entities/humanoid/player.json",
+    "side": "Server"
+  }
+]
