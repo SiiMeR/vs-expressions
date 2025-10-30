@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using System.Linq;
+using HarmonyLib;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
@@ -69,6 +70,30 @@ public class ExpressionsModSystem : ModSystem
             .WithArgs(api.ChatCommands.Parsers.Word("mouth"))
             .HandleWith(OnMouthCommand)
             .EndSubCommand();
+
+        api.Event.PlayerNowPlaying += player =>
+        {
+            var behavior = player.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
+            if (behavior == null)
+            {
+                return;
+            }
+
+            if (behavior.AppliedSkinParts.All(sp => sp.Code != "eyebrow"))
+            {
+                UpdateExpression(player, "eyebrow", "neutral");
+            }
+
+            if (behavior.AppliedSkinParts.All(sp => sp.Code != "eye"))
+            {
+                UpdateExpression(player, "eye", "neutral");
+            }
+
+            if (behavior.AppliedSkinParts.All(sp => sp.Code != "mouth"))
+            {
+                UpdateExpression(player, "mouth", "neutral");
+            }
+        };
     }
 
     private TextCommandResult OnSelectExpression(TextCommandCallingArgs args)

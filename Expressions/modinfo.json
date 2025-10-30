@@ -2,9 +2,12 @@
   "type": "code",
   "modid": "expressions",
   "name": "Expressions",
-  "authors": ["SiiMeR", "Chiruda"],
+  "authors": [
+    "SiiMeR",
+    "Chiruda"
+  ],
   "description": "Adds the ability to independently change expressions on the go",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "dependencies": {
     "game": ""
   }

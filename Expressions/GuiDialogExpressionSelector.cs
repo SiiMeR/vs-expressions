@@ -13,8 +13,6 @@ public class GuiDialogExpressionSelector : GuiDialog
 {
     private readonly float charZoom = 1.7f;
     private readonly CharacterSystem modSys;
-    public bool charNaked = true;
-    private int currentClassIndex;
 
     protected int dlgHeight = 433 + 80;
     protected ElementBounds insetSlotBounds;
@@ -29,8 +27,7 @@ public class GuiDialogExpressionSelector : GuiDialog
         this.modSys = modSys;
     }
 
-    protected virtual bool AllowClassSelection => true;
-    protected virtual bool AllowKeepCurrent => false;
+    protected virtual bool AllowKeepCurrent => true;
 
 
     public override string ToggleKeyCombinationCode => null;
@@ -67,11 +64,10 @@ public class GuiDialogExpressionSelector : GuiDialog
             ;
 
         var bh = capi.World.Player.Entity.GetBehavior<EntityBehaviorPlayerInventory>();
-        bh.hideClothing = false;
 
         var skinMod = capi.World.Player.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
 
-        bh.hideClothing = charNaked;
+        bh.hideClothing = false;
 
         var essr = capi.World.Player.Entity.Properties.Client.Renderer as EntityShapeRenderer;
         essr.TesselateShape();
@@ -207,19 +203,6 @@ public class GuiDialogExpressionSelector : GuiDialog
 
     public override void OnGuiOpened()
     {
-        var charclass = capi.World.Player.Entity.WatchedAttributes.GetString("characterClass");
-        if (AllowClassSelection)
-        {
-            if (charclass != null)
-            {
-                modSys.setCharacterClass(capi.World.Player.Entity, charclass);
-            }
-            else
-            {
-                modSys.setCharacterClass(capi.World.Player.Entity, modSys.characterClasses[0].Code);
-            }
-        }
-
         ComposeGuis();
         var essr = capi.World.Player.Entity.Properties.Client.Renderer as EntityShapeRenderer;
         essr.TesselateShape();
@@ -228,14 +211,6 @@ public class GuiDialogExpressionSelector : GuiDialog
 
     public override void OnGuiClosed()
     {
-        if (modSys != null)
-        {
-            var chclass = modSys.characterClasses[currentClassIndex];
-            // modSys.ClientSelectionDone(characterInv, chclass.Code, didSelect);
-        }
-
-        var bh = capi.World.Player.Entity.GetBehavior<EntityBehaviorPlayerInventory>();
-        bh.hideClothing = false;
         reTesselate();
     }
 
@@ -281,8 +256,6 @@ public class GuiDialogExpressionSelector : GuiDialog
     public override void OnMouseDown(MouseEvent args)
     {
         base.OnMouseDown(args);
-
-        // rotateCharacter = insetSlotBounds.PointInside(args.X, args.Y);
     }
 
     public override void OnMouseUp(MouseEvent args)
