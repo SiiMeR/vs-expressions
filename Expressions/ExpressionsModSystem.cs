@@ -9,8 +9,20 @@ namespace Expressions;
 
 public class ExpressionsModSystem : ModSystem
 {
+    public static ICoreClientAPI ClientApi;
+
     public override void StartClientSide(ICoreClientAPI api)
     {
+        ClientApi = api;
+
+        // api.Input.RegisterHotKey(
+        //     "openExSel",
+        //     "Open Expression Selection Menu",
+        //     GlKeys.N,
+        //     HotkeyType.GUIOrOtherControls
+        // );
+        // api.Input.SetHotKeyHandler("openExSel", _ => OpenExSel());
+
         var harmony = new Harmony(Mod.Info.ModID);
 
         var method =
@@ -20,7 +32,11 @@ public class ExpressionsModSystem : ModSystem
 
         harmony.Patch(method, new HarmonyMethod(patch1));
 
-        base.StartClientSide(api);
+
+        api.ChatCommands.Create("expressionselect").WithAlias("exsel").WithDescription("Set your expression")
+            .RequiresPlayer()
+            .RequiresPrivilege(Privilege.chat)
+            .HandleWith(OnSelectExpression);
     }
 
     private static void Prefix(GuiDialogCreateCharacter __instance)
@@ -38,7 +54,7 @@ public class ExpressionsModSystem : ModSystem
 
     public override void StartServerSide(ICoreServerAPI api)
     {
-        api.ChatCommands.Create("expressions").WithDescription("Set your expression")
+        api.ChatCommands.Create("expressions").WithAlias("expr").WithDescription("Set your expression")
             .RequiresPlayer()
             .RequiresPrivilege(Privilege.chat)
             .BeginSubCommand("eyebrow")
@@ -53,6 +69,13 @@ public class ExpressionsModSystem : ModSystem
             .WithArgs(api.ChatCommands.Parsers.Word("mouth"))
             .HandleWith(OnMouthCommand)
             .EndSubCommand();
+    }
+
+    private TextCommandResult OnSelectExpression(TextCommandCallingArgs args)
+    {
+        new GuiDialogExpressionSelector(ClientApi, ClientApi.ModLoader.GetModSystem<CharacterSystem>()).TryOpen();
+
+        return TextCommandResult.Success();
     }
 
     private TextCommandResult OnMouthCommand(TextCommandCallingArgs args)
