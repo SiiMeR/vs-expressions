@@ -18,7 +18,6 @@ public class GuiDialogExpressionSelector : GuiDialog
     protected ElementBounds insetSlotBounds;
 
     protected Action<GuiComposer> onBeforeCompose;
-    private int rows = 7;
 
     public string[] variantCategories = ["standard"];
 
@@ -211,6 +210,22 @@ public class GuiDialogExpressionSelector : GuiDialog
 
     public override void OnGuiClosed()
     {
+        var skinMod = capi.World.Player.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
+        if (skinMod == null)
+        {
+            capi.Logger.Debug("Cannot access EntityBehaviorExtraSkinnable after selecting expression for some reason");
+            return;
+        }
+
+        var expressionSelectionPacket = new ExpressionSelectionPacket
+        {
+            EyebrowsVariant = skinMod.AppliedSkinParts.First(sp => sp.PartCode == "eyebrow").Code,
+            EyesVariant = skinMod.AppliedSkinParts.First(sp => sp.PartCode == "eye").Code,
+            MouthVariant = skinMod.AppliedSkinParts.First(sp => sp.PartCode == "mouth").Code
+        };
+
+        ExpressionsModSystem.ClientNetworkChannel.SendPacket(expressionSelectionPacket);
+
         reTesselate();
     }
 

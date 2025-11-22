@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using HarmonyLib;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
@@ -12,9 +13,14 @@ public class ExpressionsModSystem : ModSystem
 {
     public static ICoreClientAPI ClientApi;
 
+    public static IClientNetworkChannel ClientNetworkChannel;
+    public static IServerNetworkChannel ServerNetworkChannel;
+
     public override void StartClientSide(ICoreClientAPI api)
     {
         ClientApi = api;
+
+        ClientNetworkChannel = api.Network.RegisterChannel("exsel").RegisterMessageType<ExpressionSelectionPacket>();
 
         // api.Input.RegisterHotKey(
         //     "openExSel",
@@ -55,6 +61,9 @@ public class ExpressionsModSystem : ModSystem
 
     public override void StartServerSide(ICoreServerAPI api)
     {
+        ServerNetworkChannel = api.Network.RegisterChannel("exsel").RegisterMessageType<ExpressionSelectionPacket>()
+            .SetMessageHandler<ExpressionSelectionPacket>(OnExpressionSelectionPacket);
+
         api.ChatCommands.Create("expressions").WithAlias("expr").WithDescription("Set your expression")
             .RequiresPlayer()
             .RequiresPrivilege(Privilege.chat)
@@ -94,6 +103,18 @@ public class ExpressionsModSystem : ModSystem
                 UpdateExpression(player, "mouth", "neutral");
             }
         };
+    }
+
+    private void OnExpressionSelectionPacket(IServerPlayer fromPlayer, ExpressionSelectionPacket packet)
+    {
+        Console.WriteLine(packet.EyebrowsVariant);
+        Console.WriteLine(packet.EyesVariant);
+        Console.WriteLine(packet.MouthVariant);
+
+
+        UpdateExpression(fromPlayer, "eyebrow", packet.EyebrowsVariant);
+        UpdateExpression(fromPlayer, "eye", packet.EyesVariant);
+        UpdateExpression(fromPlayer, "mouth", packet.MouthVariant);
     }
 
     private TextCommandResult OnSelectExpression(TextCommandCallingArgs args)
