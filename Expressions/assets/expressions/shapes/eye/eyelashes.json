@@ -9,7 +9,7 @@
   "textureSizes": {},
   "textures": {
     "iris": "game:entity/humanoid/seraphskinparts/eyes/acid-green",
-    "parttexture": "seraph-for-eyes"
+    "parttexture": "seraph-for-eyes-black"
   },
   "elements": [
     {

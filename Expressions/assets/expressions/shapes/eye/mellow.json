@@ -12,8 +12,8 @@
     ]
   },
   "textures": {
-    "parttexture": "seraph-for-eyes",
-    "iris": "eyes/topaz"
+    "parttexture": "seraph-for-eyes-black",
+    "iris": "red"
   },
   "elements": [
     {

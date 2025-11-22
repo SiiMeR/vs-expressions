@@ -1,8 +1,9 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
+using System.Reflection;
 using HarmonyLib;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
+using Vintagestory.API.Datastructures;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 using Vintagestory.Server;
@@ -88,19 +89,48 @@ public class ExpressionsModSystem : ModSystem
                 return;
             }
 
-            if (behavior.AppliedSkinParts.All(sp => sp.Code != "eyebrow"))
+            if (behavior.AppliedSkinParts.All(sp => sp.PartCode != "eyebrow"))
             {
                 UpdateExpression(player, "eyebrow", "neutral");
             }
 
-            if (behavior.AppliedSkinParts.All(sp => sp.Code != "eye"))
+            if (behavior.AppliedSkinParts.All(sp => sp.PartCode != "eye"))
             {
                 UpdateExpression(player, "eye", "neutral");
             }
 
-            if (behavior.AppliedSkinParts.All(sp => sp.Code != "mouth"))
+            if (behavior.AppliedSkinParts.All(sp => sp.PartCode != "mouth"))
             {
                 UpdateExpression(player, "mouth", "neutral");
+            }
+
+
+            if (behavior.AppliedSkinParts.All(sp => sp.PartCode != "iriscolor"))
+            {
+                var field = behavior.GetType()
+                    .GetField("skintree", BindingFlags.Instance | BindingFlags.NonPublic);
+
+                if (field == null)
+                {
+                    return;
+                }
+
+                var tree = (ITreeAttribute)field.GetValue(behavior);
+
+                if (tree == null)
+                {
+                    return;
+                }
+
+                var value = tree.GetTreeAttribute("appliedParts").GetAsString("eyecolor");
+
+                if (value == null)
+                {
+                    return;
+                }
+
+
+                UpdateExpression(player, "iriscolor", value);
             }
         };
     }
