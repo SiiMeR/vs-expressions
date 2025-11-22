@@ -388,5 +388,163 @@
     },
     "file": "game:entities/humanoid/player.json",
     "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/skinnableParts/-",
+    "value": {
+      code: "facepartcolor",
+      type: "texture",
+      textureTarget: "parttexture",
+      "targetSkinParts": [
+        "mouth",
+        "eyebrow",
+        "eye"
+      ],
+      "variants": [
+        {
+          "code": "gray",
+          "texture": "expressions:seraph-for-eyes-black"
+        },
+        {
+          "code": "black",
+          "texture": "expressions:seraph-for-eyes-gray"
+        }
+      ]
+    },
+    "file": "game:entities/humanoid/player.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/skinnableParts/-",
+    "value": {
+      code: "iriscolor",
+      type: "texture",
+      textureTarget: "iris",
+      "targetSkinParts": [
+        "eye"
+      ],
+      textureRenderTo: {
+        x: 57,
+        y: 0
+      },
+      variants: [
+        {
+          code: "acid-green",
+          texture: "entity/humanoid/seraphskinparts/eyes/acid-green"
+        },
+        {
+          code: "aquamarine",
+          texture: "entity/humanoid/seraphskinparts/eyes/aquamarine"
+        },
+        {
+          code: "azure",
+          texture: "entity/humanoid/seraphskinparts/eyes/azure"
+        },
+        {
+          code: "bitter-lemon",
+          texture: "entity/humanoid/seraphskinparts/eyes/bitter-lemon"
+        },
+        {
+          code: "cadmium-orange",
+          texture: "entity/humanoid/seraphskinparts/eyes/cadmium-orange"
+        },
+        {
+          code: "citron",
+          texture: "entity/humanoid/seraphskinparts/eyes/citron"
+        },
+        {
+          code: "dark-green",
+          texture: "entity/humanoid/seraphskinparts/eyes/dark-green"
+        },
+        {
+          code: "forest-green",
+          texture: "entity/humanoid/seraphskinparts/eyes/forest-green"
+        },
+        {
+          code: "goldenrod",
+          texture: "entity/humanoid/seraphskinparts/eyes/goldenrod"
+        },
+        {
+          code: "jade",
+          texture: "entity/humanoid/seraphskinparts/eyes/jade"
+        },
+        {
+          code: "lavander",
+          texture: "entity/humanoid/seraphskinparts/eyes/lavander"
+        },
+        {
+          code: "malachite",
+          texture: "entity/humanoid/seraphskinparts/eyes/malachite"
+        },
+        {
+          code: "mantis",
+          texture: "entity/humanoid/seraphskinparts/eyes/mantis"
+        },
+        {
+          code: "midnight",
+          texture: "entity/humanoid/seraphskinparts/eyes/midnight"
+        },
+        {
+          code: "phthalo-blue",
+          texture: "entity/humanoid/seraphskinparts/eyes/phthalo-blue"
+        },
+        {
+          code: "purple",
+          texture: "entity/humanoid/seraphskinparts/eyes/purple"
+        },
+        {
+          code: "sand",
+          texture: "entity/humanoid/seraphskinparts/eyes/sand"
+        },
+        {
+          code: "sapphire",
+          texture: "entity/humanoid/seraphskinparts/eyes/sapphire"
+        },
+        {
+          code: "amethyst",
+          texture: "entity/humanoid/seraphskinparts/eyes/amethyst"
+        },
+        {
+          code: "blackopal",
+          texture: "entity/humanoid/seraphskinparts/eyes/blackopal"
+        },
+        {
+          code: "citrine",
+          texture: "entity/humanoid/seraphskinparts/eyes/citrine"
+        },
+        {
+          code: "opal",
+          texture: "entity/humanoid/seraphskinparts/eyes/opal"
+        },
+        {
+          code: "quartzrose",
+          texture: "entity/humanoid/seraphskinparts/eyes/quartzrose"
+        },
+        {
+          code: "smokyquartz",
+          texture: "entity/humanoid/seraphskinparts/eyes/smokyquartz"
+        }
+      ]
+    },
+    "file": "game:entities/humanoid/player.json",
+    "side": "Server"
   }
+  //  {
+  //    "op": "addmerge",
+  //    "path": "/attributes/skinnableParts/1/textureTarget",
+  //    "value": "iris",
+  //    "file": "game:entities/humanoid/player.json",
+  //    "side": "Server"
+  //  },
+  //  {
+  //    "op": "addmerge",
+  //    "path": "/attributes/skinnableParts/1/targetSkinParts",
+  //    "value": [
+  //      "eye"
+  //    ],
+  //    "file": "game:entities/humanoid/player.json",
+  //    "side": "Server"
+  //  }
 ]

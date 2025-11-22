@@ -107,11 +107,6 @@ public class ExpressionsModSystem : ModSystem
 
     private void OnExpressionSelectionPacket(IServerPlayer fromPlayer, ExpressionSelectionPacket packet)
     {
-        Console.WriteLine(packet.EyebrowsVariant);
-        Console.WriteLine(packet.EyesVariant);
-        Console.WriteLine(packet.MouthVariant);
-
-
         UpdateExpression(fromPlayer, "eyebrow", packet.EyebrowsVariant);
         UpdateExpression(fromPlayer, "eye", packet.EyesVariant);
         UpdateExpression(fromPlayer, "mouth", packet.MouthVariant);
