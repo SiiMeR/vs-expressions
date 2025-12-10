@@ -193,6 +193,12 @@
           }
         },
         {
+          "code": "judgemental",
+          "shape": {
+            "base": "expressions:eye/judgemental"
+          }
+        },
+        {
           "code": "kind",
           "shape": {
             "base": "expressions:eye/kind"
@@ -433,9 +439,7 @@
   {
     "op": "addmerge",
     "path": "/attributes/skinnableParts/1/targetSkinParts",
-    "value": [
-      "eye"
-    ],
+    "value": ["eye"],
     "file": "game:entities/humanoid/player.json",
     "side": "Server"
     //    "dependsOn": [
@@ -466,8 +470,8 @@
     "op": "addmerge",
     "path": "/attributes/skinnableParts/1/textureRenderTo",
     "value": {
-      x: 57,
-      y: 0
+      "x": 57,
+      "y": 0
     },
     "file": "game:entities/humanoid/player.json",
     "side": "Server"
@@ -481,4 +485,3 @@
     //    ]
   }
 ]
-

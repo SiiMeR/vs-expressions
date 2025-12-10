@@ -1,0 +1,1019 @@
+{
+  "editor": {
+    "backDropShape": "C:/Users/Bruger/AppData/Roaming/Vintagestory/assets/game/shapes/entity/humanoid/seraph-faceless",
+    "collapsedPaths": "Root/Cube2/L iris3,Root/eyesroot/R eye/eyelid l10,Root/eyesroot/R eye/eyelid l12,Root/Cube2/eyelid l10,Root/Cube2/eyelid l12,Root/eyesroot/R eye/L iris3",
+    "allAngles": true,
+    "entityTextureMode": true
+  },
+  "textureWidth": 32,
+  "textureHeight": 76,
+  "textureSizes": {
+    "iris": [8, 8],
+    "seraph-for-eyes-black": [32, 76],
+    "red": [16, 16]
+  },
+  "textures": {
+    "parttexture": "seraph-for-eyes-black",
+    "iris": "red"
+  },
+  "elements": [
+    {
+      "name": "eyesroot",
+      "stepParentName": "Head",
+      "from": [0.0, 0.0, 0.0],
+      "to": [5.5, 5.0, 5.0],
+      "unwrapMode": 4,
+      "uv": [0.0, 0.0],
+      "faces": {},
+      "children": [
+        {
+          "name": "L eye",
+          "from": [-0.01, 1.95, 3.1],
+          "to": [0.09, 2.45, 4.0],
+          "unwrapMode": 4,
+          "uv": [3.5, 10.0],
+          "rotationOrigin": [0.0, 1.95, 3.1],
+          "rotationX": -3.0,
+          "faces": {
+            "north": {
+              "texture": "#iris",
+              "uv": [2, 0, 5, 3],
+              "windMode": [-1, -1, -1, -1]
+            },
+            "east": {
+              "texture": "#iris",
+              "uv": [2, 0, 5, 3],
+              "windMode": [-1, -1, -1, -1],
+              "windData": [0, 0, 0, 0]
+            },
+            "south": {
+              "texture": "#iris",
+              "uv": [2, 0, 5, 3],
+              "windMode": [-1, -1, -1, -1]
+            },
+            "west": {
+              "texture": "#iris",
+              "uv": [2, 0, 5, 3],
+              "windMode": [-1, -1, -1, -1]
+            },
+            "up": {
+              "texture": "#iris",
+              "uv": [2, 0, 5, 3],
+              "rotation": 90,
+              "windMode": [-1, -1, -1, -1]
+            },
+            "down": {
+              "texture": "#iris",
+              "uv": [2, 0, 5, 3],
+              "rotation": 90,
+              "windMode": [-1, -1, -1, -1]
+            }
+          },
+          "children": [
+            {
+              "name": "L iris",
+              "from": [-0.03, 0.05, 0.25],
+              "to": [0.07, 0.45, 0.7],
+              "unwrapMode": 4,
+              "uv": [2.0, 0.0],
+              "rotationOrigin": [0.0, 0.05, 0.35],
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [2.0, 0.5, 2.5, 1.0]
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [3.0, 0.5, 3.5, 1.0]
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [2.5, 0.5, 3.0, 1.0]
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [2.5, 0.0, 3.0, 0.5],
+                  "rotation": 90
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [2.5, 1.0, 3.0, 1.5],
+                  "rotation": 90
+                }
+              },
+              "children": [
+                {
+                  "name": "shine large 2",
+                  "from": [-0.01, 0.17, 0.07],
+                  "to": [0.09, 0.34, 0.24],
+                  "unwrapMode": 4,
+                  "uv": [29.0, 4.5],
+                  "rotationOrigin": [-0.07, 0.3, 0.1],
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 5.0, 29.5, 5.5]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 5.0, 30.5, 5.5]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 5.0, 30.0, 5.5]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 4.5, 30.0, 5.0],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 5.5, 30.0, 6.0],
+                      "rotation": 90
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "shine small 2",
+                      "from": [0.0, -0.04, -0.05],
+                      "to": [0.1, 0.06, 0.05],
+                      "unwrapMode": 4,
+                      "uv": [30.0, 4.5],
+                      "rotationOrigin": [0.04, 0.03, 0.18],
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [30.0, 5.0, 30.5, 5.5]
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [31.0, 5.0, 31.5, 5.5]
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 5.0, 31.0, 5.5]
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 4.5, 31.0, 5.0],
+                          "rotation": 90
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 5.5, 31.0, 6.0],
+                          "rotation": 90
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "L iris2",
+              "from": [-0.02, 0.1, 0.15],
+              "to": [0.08, 0.5, 0.75],
+              "unwrapMode": 4,
+              "uv": [30.0, 11.0],
+              "rotationOrigin": [0.0, 0.05, 0.15],
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 11.5, 30.5, 12.0]
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [31.0, 11.5, 31.5, 12.0]
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 11.5, 31.0, 12.0]
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 11.0, 31.0, 11.5],
+                  "rotation": 90
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 12.0, 31.0, 12.5],
+                  "rotation": 90
+                }
+              }
+            },
+            {
+              "name": "eyelid l",
+              "from": [-0.09, 0.42, -0.05],
+              "to": [0.01, 0.59, 1.35],
+              "unwrapMode": 4,
+              "uv": [29.5, 8.5],
+              "rotationOrigin": [-0.09, 0.45, 0.0],
+              "rotationX": 3.0,
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 9.0, 30.0, 9.5]
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [31.0, 9.0, 31.5, 9.5]
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 9.0, 31.0, 9.5]
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 8.5, 31.0, 9.0],
+                  "rotation": 90
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 9.5, 31.0, 10.0],
+                  "rotation": 90
+                }
+              },
+              "children": [
+                {
+                  "name": "eyelid l3",
+                  "from": [0.0, -0.07, -0.2],
+                  "to": [0.1, 0.1, 0.1],
+                  "unwrapMode": 4,
+                  "uv": [29.0, 8.0],
+                  "rotationOrigin": [0.0, -0.07, -0.15],
+                  "rotationX": -19.0,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 8.5, 29.5, 9.0]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 8.5, 30.5, 9.0]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 8.5, 30.0, 9.0]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 8.0, 30.0, 8.5],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 9.0, 30.0, 9.5],
+                      "rotation": 90
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "eyelid l2",
+              "from": [-0.09, -0.02, 0.0],
+              "to": [0.01, 0.05, 0.85],
+              "unwrapMode": 4,
+              "uv": [29.5, 7.5],
+              "rotationOrigin": [-0.09, 0.05, 0.0],
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 8.0, 30.0, 8.5]
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 8.0, 31.0, 8.5]
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 8.0, 30.5, 8.5]
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 7.5, 30.5, 8.0],
+                  "rotation": 90
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 8.5, 30.5, 9.0],
+                  "rotation": 90
+                }
+              },
+              "children": [
+                {
+                  "name": "eyelid l4",
+                  "from": [0.0, 0.0, 0.9],
+                  "to": [0.1, 0.1, 1.45],
+                  "unwrapMode": 4,
+                  "uv": [29.0, 7.5],
+                  "rotationOrigin": [0.0, -0.03, 0.9],
+                  "rotationX": -39.0,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 8.0, 29.5, 8.5]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 8.0, 30.5, 8.5]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 8.0, 30.0, 8.5]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 7.5, 30.0, 8.0],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 8.5, 30.0, 9.0],
+                      "rotation": 90
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "eyelid l8",
+                      "from": [0.0, -0.1, 0.1],
+                      "to": [0.1, 0.0, 0.17],
+                      "unwrapMode": 4,
+                      "uv": [29.0, 6.5],
+                      "rotationOrigin": [0.0, -0.03, 0.1],
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [29.0, 7.0, 29.5, 7.5]
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [30.0, 7.0, 30.5, 7.5]
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 7.0, 30.0, 7.5]
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 6.5, 30.0, 7.0],
+                          "rotation": 90
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 7.5, 30.0, 8.0],
+                          "rotation": 90
+                        }
+                      }
+                    },
+                    {
+                      "name": "eyelid l9",
+                      "from": [0.0, -0.1, 0.3],
+                      "to": [0.1, 0.0, 0.37],
+                      "unwrapMode": 4,
+                      "uv": [29.0, 7.0],
+                      "rotationOrigin": [0.0, -0.03, 0.3],
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [29.0, 7.5, 29.5, 8.0]
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [30.0, 7.5, 30.5, 8.0]
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 7.5, 30.0, 8.0]
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 7.0, 30.0, 7.5],
+                          "rotation": 90
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 8.0, 30.0, 8.5],
+                          "rotation": 90
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "eyelid l6",
+                  "from": [0.0, -0.1, 0.6],
+                  "to": [0.1, 0.0, 0.67],
+                  "unwrapMode": 4,
+                  "uv": [28.5, 7.5],
+                  "rotationOrigin": [0.0, -0.03, 0.6],
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 8.0, 29.0, 8.5]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 8.0, 30.0, 8.5]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 8.0, 29.5, 8.5]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 7.5, 29.5, 8.0],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 8.5, 29.5, 9.0],
+                      "rotation": 90
+                    }
+                  }
+                },
+                {
+                  "name": "eyelid l7",
+                  "from": [0.0, -0.1, 0.8],
+                  "to": [0.1, 0.0, 0.87],
+                  "unwrapMode": 4,
+                  "uv": [28.5, 7.5],
+                  "rotationOrigin": [0.0, -0.03, 0.8],
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 8.0, 29.0, 8.5]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 8.0, 30.0, 8.5]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 8.0, 29.5, 8.5]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 7.5, 29.5, 8.0],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29.0, 8.5, 29.5, 9.0],
+                      "rotation": 90
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "R eye",
+          "from": [-0.01, 2.45, 1.9],
+          "to": [0.09, 2.95, 2.8],
+          "unwrapMode": 4,
+          "uv": [5.5, 10.0],
+          "rotationOrigin": [0.1, 2.45, 1.9],
+          "rotationX": 3.0,
+          "rotationY": -180.0,
+          "rotationZ": 180.0,
+          "faces": {
+            "north": {
+              "texture": "#iris",
+              "uv": [2, 5, 5, 8],
+              "windMode": [-1, -1, -1, -1],
+              "windData": [1, 1, 1, 1]
+            },
+            "east": {
+              "texture": "#iris",
+              "uv": [2, 5, 5, 8],
+              "windMode": [-1, -1, -1, -1],
+              "windData": [1, 1, 1, 1]
+            },
+            "south": {
+              "texture": "#iris",
+              "uv": [2, 5, 5, 8],
+              "windMode": [-1, -1, -1, -1],
+              "windData": [1, 1, 1, 1]
+            },
+            "west": {
+              "texture": "#iris",
+              "uv": [2, 5, 5, 8],
+              "windMode": [-1, -1, -1, -1],
+              "windData": [1, 1, 1, 1]
+            },
+            "up": {
+              "texture": "#iris",
+              "uv": [2, 5, 5, 8],
+              "rotation": 90,
+              "windMode": [-1, -1, -1, -1],
+              "windData": [1, 1, 1, 1]
+            },
+            "down": {
+              "texture": "#iris",
+              "uv": [2, 5, 5, 8],
+              "rotation": 90,
+              "windMode": [-1, -1, -1, -1],
+              "windData": [1, 1, 1, 1]
+            }
+          },
+          "children": [
+            {
+              "name": "L iris3",
+              "from": [0.13, 0.4493, 0.2238],
+              "to": [0.23, 0.8493, 0.6738],
+              "unwrapMode": 4,
+              "uv": [2.0, 0.0],
+              "rotationOrigin": [0.1, 0.4493, 0.3238],
+              "rotationX": 0.0,
+              "rotationY": 0.0,
+              "rotationZ": 180.0,
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [2.0, 0.5, 2.5, 1.0]
+                },
+                "east": {
+                  "texture": "#parttexture",
+                  "uv": [3.5, 0.5, 4.0, 1.0],
+                  "windMode": [-1, -1, -1, -1],
+                  "windData": [1, 1, 1, 1]
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [3.0, 0.5, 3.5, 1.0]
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [2.5, 0.5, 3.0, 1.0]
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [2.5, 0.0, 3.0, 0.5],
+                  "rotation": 90
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [2.5, 1.0, 3.0, 1.5],
+                  "rotation": 90
+                }
+              },
+              "children": [
+                {
+                  "name": "shine large 3",
+                  "from": [0.01, 0.17, 0.21],
+                  "to": [0.11, 0.34, 0.38],
+                  "unwrapMode": 4,
+                  "uv": [29.5, 4.0],
+                  "rotationOrigin": [-0.07, 0.3, 0.2],
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 4.5, 30.0, 5.0]
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [31.0, 4.5, 31.5, 5.0],
+                      "windMode": [-1, -1, -1, -1],
+                      "windData": [1, 1, 1, 1]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 4.5, 31.0, 5.0]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 4.5, 30.5, 5.0]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 4.0, 30.5, 4.5],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 5.0, 30.5, 5.5],
+                      "rotation": 90
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "shine small 3",
+                      "from": [0.0, -0.04, 0.12],
+                      "to": [0.1, 0.06, 0.22],
+                      "unwrapMode": 4,
+                      "uv": [30.0, 4.0],
+                      "rotationOrigin": [0.04, 0.03, 0.38],
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [30.0, 4.5, 30.5, 5.0]
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [31.5, 4.5, 32.0, 5.0],
+                          "windMode": [-1, -1, -1, -1],
+                          "windData": [1, 1, 1, 1]
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [31.0, 4.5, 31.5, 5.0]
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 4.5, 31.0, 5.0]
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 4.0, 31.0, 4.5],
+                          "rotation": 90
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 5.0, 31.0, 5.5],
+                          "rotation": 90
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "L iris4",
+              "from": [0.12, 0.4993, 0.1238],
+              "to": [0.22, 0.8993, 0.7238],
+              "unwrapMode": 4,
+              "uv": [29.0, 14.5],
+              "rotationOrigin": [0.1, 0.4493, 0.1238],
+              "rotationX": 0.0,
+              "rotationY": 0.0,
+              "rotationZ": 180.0,
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [29.0, 15.0, 29.5, 15.5]
+                },
+                "east": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 15.0, 31.0, 15.5],
+                  "windMode": [-1, -1, -1, -1],
+                  "windData": [1, 1, 1, 1]
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 15.0, 30.5, 15.5]
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 15.0, 30.0, 15.5]
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 14.5, 30.0, 15.0],
+                  "rotation": 90
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 15.5, 30.0, 16.0],
+                  "rotation": 90
+                }
+              }
+            },
+            {
+              "name": "eyelid l10",
+              "from": [0.37, 0.0193, -0.0762],
+              "to": [0.47, 0.1893, 1.3238],
+              "unwrapMode": 4,
+              "uv": [28.5, 7.5],
+              "rotationOrigin": [0.19, 0.0493, -0.0262],
+              "rotationX": -3.0,
+              "rotationY": 0.0,
+              "rotationZ": 180.0,
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [28.5, 8.0, 29.0, 8.5]
+                },
+                "east": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 8.0, 31.5, 8.5],
+                  "windMode": [-1, -1, -1, -1],
+                  "windData": [1, 1, 1, 1]
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 8.0, 30.5, 8.5]
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [29.0, 8.0, 30.0, 8.5]
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [29.0, 7.5, 30.0, 8.0],
+                  "rotation": 90
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [29.0, 8.5, 30.0, 9.0],
+                  "rotation": 90
+                }
+              },
+              "children": [
+                {
+                  "name": "eyelid l11",
+                  "from": [0.0, -0.07, -0.2],
+                  "to": [0.1, 0.1, 0.1],
+                  "unwrapMode": 4,
+                  "uv": [29.5, 7.0],
+                  "rotationOrigin": [0.0, -0.07, -0.15],
+                  "rotationX": -19.0,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 7.5, 30.0, 8.0]
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [31.0, 7.5, 31.5, 8.0],
+                      "windMode": [-1, -1, -1, -1],
+                      "windData": [1, 1, 1, 1]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 7.5, 31.0, 8.0]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 7.5, 30.5, 8.0]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 7.0, 30.5, 7.5],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 8.0, 30.5, 8.5],
+                      "rotation": 90
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "eyelid l12",
+              "from": [0.37, 0.3793, -0.0262],
+              "to": [0.47, 0.4493, 0.8238],
+              "unwrapMode": 4,
+              "uv": [29.5, 7.0],
+              "rotationOrigin": [0.19, 0.4493, -0.0262],
+              "rotationX": 0.0,
+              "rotationY": 0.0,
+              "rotationZ": 180.0,
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 7.5, 30.0, 8.0]
+                },
+                "east": {
+                  "texture": "#parttexture",
+                  "uv": [31.0, 7.5, 31.5, 8.0],
+                  "windMode": [-1, -1, -1, -1],
+                  "windData": [1, 1, 1, 1]
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 7.5, 31.0, 8.0]
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 7.5, 30.5, 8.0]
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 7.0, 30.5, 7.5],
+                  "rotation": 90
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [30.0, 8.0, 30.5, 8.5],
+                  "rotation": 90
+                }
+              },
+              "children": [
+                {
+                  "name": "eyelid l13",
+                  "from": [0.0, 0.0, 0.9],
+                  "to": [0.1, 0.1, 1.45],
+                  "unwrapMode": 4,
+                  "uv": [29.5, 6.5],
+                  "rotationOrigin": [0.0, -0.03, 0.9],
+                  "rotationX": -39.0,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 7.0, 30.0, 7.5]
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [31.0, 7.0, 31.5, 7.5],
+                      "windMode": [-1, -1, -1, -1],
+                      "windData": [1, 1, 1, 1]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 7.0, 31.0, 7.5]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 7.0, 30.5, 7.5]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 6.5, 30.5, 7.0],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 7.5, 30.5, 8.0],
+                      "rotation": 90
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "eyelid l14",
+                      "from": [0.0, -0.1, 0.1],
+                      "to": [0.1, 0.0, 0.17],
+                      "unwrapMode": 4,
+                      "uv": [30.0, 6.0],
+                      "rotationOrigin": [0.0, -0.03, 0.1],
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [30.0, 6.5, 30.5, 7.0]
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [31.5, 6.5, 32.0, 7.0],
+                          "windMode": [-1, -1, -1, -1],
+                          "windData": [1, 1, 1, 1]
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [31.0, 6.5, 31.5, 7.0]
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 6.5, 31.0, 7.0]
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 6.0, 31.0, 6.5],
+                          "rotation": 90
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 7.0, 31.0, 7.5],
+                          "rotation": 90
+                        }
+                      }
+                    },
+                    {
+                      "name": "eyelid l15",
+                      "from": [0.0, -0.1, 0.3],
+                      "to": [0.1, 0.0, 0.37],
+                      "unwrapMode": 4,
+                      "uv": [30.0, 6.0],
+                      "rotationOrigin": [0.0, -0.03, 0.3],
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [30.0, 6.5, 30.5, 7.0]
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [31.5, 6.5, 32.0, 7.0],
+                          "windMode": [-1, -1, -1, -1],
+                          "windData": [1, 1, 1, 1]
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [31.0, 6.5, 31.5, 7.0]
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 6.5, 31.0, 7.0]
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 6.0, 31.0, 6.5],
+                          "rotation": 90
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 7.0, 31.0, 7.5],
+                          "rotation": 90
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "eyelid l16",
+                  "from": [0.0, -0.1, 0.6],
+                  "to": [0.1, 0.0, 0.67],
+                  "unwrapMode": 4,
+                  "uv": [30.0, 6.0],
+                  "rotationOrigin": [0.0, -0.03, 0.6],
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 6.5, 30.5, 7.0]
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [31.5, 6.5, 32.0, 7.0],
+                      "windMode": [-1, -1, -1, -1],
+                      "windData": [1, 1, 1, 1]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [31.0, 6.5, 31.5, 7.0]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 6.5, 31.0, 7.0]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 6.0, 31.0, 6.5],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 7.0, 31.0, 7.5],
+                      "rotation": 90
+                    }
+                  }
+                },
+                {
+                  "name": "eyelid l17",
+                  "from": [0.0, -0.1, 0.8],
+                  "to": [0.1, 0.0, 0.87],
+                  "unwrapMode": 4,
+                  "uv": [30.0, 6.0],
+                  "rotationOrigin": [0.0, -0.03, 0.8],
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30.0, 6.5, 30.5, 7.0]
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [31.5, 6.5, 32.0, 7.0],
+                      "windMode": [-1, -1, -1, -1],
+                      "windData": [1, 1, 1, 1]
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [31.0, 6.5, 31.5, 7.0]
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 6.5, 31.0, 7.0]
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 6.0, 31.0, 6.5],
+                      "rotation": 90
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 7.0, 31.0, 7.5],
+                      "rotation": 90
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "attachmentpoints": [
+        {
+          "code": "Eyes",
+          "posX": "1.3",
+          "posY": "3.5",
+          "posZ": "2.5",
+          "rotationX": "0.0",
+          "rotationY": "-90.0",
+          "rotationZ": "0.0"
+        }
+      ]
+    }
+  ]
+}
