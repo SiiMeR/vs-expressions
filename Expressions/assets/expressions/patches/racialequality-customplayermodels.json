@@ -15,11 +15,12 @@
   { "op": "add", "path": "/dwarf/SkinnableParts/-", "file": "racialequality:config/customplayermodels/dwarf-char", "side": "Universal", "value": {
     "code": "eye", "type": "shape",
     "variants": [
-      { "code": "angry",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/angry" } },
-      { "code": "neutral",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/neutral" } },
-      { "code": "upset",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/upset" } },
-      { "code": "very-sad",  "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/very-sad" } },
-      { "code": "eyelashes", "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/eyelashes" } }
+      { "code": "angry",       "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/angry" } },
+      { "code": "neutral",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/neutral" } },
+      { "code": "upset",       "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/upset" } },
+      { "code": "very-sad",    "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/very-sad" } },
+      { "code": "judgemental", "shape": { "base": "expressions:entity/humanoid/re/judgemental" } },
+      { "code": "eyelashes",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-dwarf/eye/eyelashes" } }
     ]
   }},
   { "op": "add", "path": "/dwarf/SkinnableParts/-", "file": "racialequality:config/customplayermodels/dwarf-char", "side": "Universal", "value": {
@@ -49,12 +50,13 @@
   { "op": "add", "path": "/elf/SkinnableParts/-", "file": "racialequality:config/customplayermodels/elf-char", "side": "Universal", "value": {
     "code": "eye", "type": "shape",
     "variants": [
-      { "code": "neutral",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/neutral" } },
-      { "code": "serious",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/serious" } },
-      { "code": "grin",      "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/grin" } },
-      { "code": "tired",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/tired" } },
-      { "code": "very-sad",  "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/very-sad" } },
-      { "code": "eyelashes", "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/eyelashes" } }
+      { "code": "neutral",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/neutral" } },
+      { "code": "serious",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/serious" } },
+      { "code": "grin",        "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/grin" } },
+      { "code": "tired",       "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/tired" } },
+      { "code": "very-sad",    "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/very-sad" } },
+      { "code": "judgemental", "shape": { "base": "expressions:entity/humanoid/re/judgemental" } },
+      { "code": "eyelashes",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-elf/eye/eyelashes" } }
     ]
   }},
   { "op": "add", "path": "/elf/SkinnableParts/-", "file": "racialequality:config/customplayermodels/elf-char", "side": "Universal", "value": {
@@ -73,24 +75,15 @@
   { "op": "replace", "path": "/goblin/SkinnableParts/1/textureTarget", "file": "racialequality:config/customplayermodels/goblin-char", "side": "Universal", "value": "playermodellib-iris" },
   { "op": "replace", "path": "/goblin/SkinnableParts/1/targetSkinParts", "file": "racialequality:config/customplayermodels/goblin-char", "side": "Universal", "value": ["eye"] },
   { "op": "add", "path": "/goblin/SkinnableParts/-", "file": "racialequality:config/customplayermodels/goblin-char", "side": "Universal", "value": {
-    "code": "eyebrow", "type": "shape",
-    "variants": [
-      { "code": "angry",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eyebrow/angry" } },
-      { "code": "grin",    "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eyebrow/grin" } },
-      { "code": "neutral", "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eyebrow/neutral" } },
-      { "code": "serious", "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eyebrow/serious" } },
-      { "code": "upset",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eyebrow/upset" } }
-    ]
-  }},
-  { "op": "add", "path": "/goblin/SkinnableParts/-", "file": "racialequality:config/customplayermodels/goblin-char", "side": "Universal", "value": {
     "code": "eye", "type": "shape",
     "variants": [
-      { "code": "angry",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/angry" } },
-      { "code": "grin",      "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/grin" } },
-      { "code": "neutral",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/neutral" } },
-      { "code": "serious",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/serious" } },
-      { "code": "upset",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/upset" } },
-      { "code": "eyelashes", "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/eyelashes" } }
+      { "code": "angry",       "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/angry" } },
+      { "code": "grin",        "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/grin" } },
+      { "code": "neutral",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/neutral" } },
+      { "code": "serious",     "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/serious" } },
+      { "code": "upset",       "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/upset" } },
+      { "code": "judgemental", "shape": { "base": "expressions:entity/humanoid/re/judgemental" } },
+      { "code": "eyelashes",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-goblin/eye/eyelashes" } }
     ]
   }},
   { "op": "add", "path": "/goblin/SkinnableParts/-", "file": "racialequality:config/customplayermodels/goblin-char", "side": "Universal", "value": {
@@ -120,11 +113,12 @@
   { "op": "add", "path": "/ork/SkinnableParts/-", "file": "racialequality:config/customplayermodels/ork-char", "side": "Universal", "value": {
     "code": "eye", "type": "shape",
     "variants": [
-      { "code": "angry",      "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/angry" } },
-      { "code": "determined", "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/determined" } },
-      { "code": "sad",        "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/sad" } },
-      { "code": "very-sad",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/very-sad" } },
-      { "code": "eyelashes",  "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/eyelashes" } }
+      { "code": "angry",       "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/angry" } },
+      { "code": "determined",  "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/determined" } },
+      { "code": "sad",         "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/sad" } },
+      { "code": "very-sad",    "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/very-sad" } },
+      { "code": "judgemental", "shape": { "base": "expressions:entity/humanoid/re/judgemental" } },
+      { "code": "eyelashes",   "shape": { "base": "expressions:entity/humanoid/re/racialequality-ork/eye/eyelashes" } }
     ]
   }},
   { "op": "add", "path": "/ork/SkinnableParts/-", "file": "racialequality:config/customplayermodels/ork-char", "side": "Universal", "value": {
