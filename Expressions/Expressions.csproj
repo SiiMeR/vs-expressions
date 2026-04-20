@@ -2,6 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
     </PropertyGroup>
@@ -37,6 +38,10 @@
         </Reference>
         <Reference Include="protobuf-net">
             <HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="PlayerModelLib">
+            <HintPath>$(AppData)\VSLInstallations\1.21.5\Cache\unpack\playermodellib_1.10.11.zip_47c6b182e2bf\PlayerModelLib.dll</HintPath>
             <Private>false</Private>
         </Reference>
     </ItemGroup>
