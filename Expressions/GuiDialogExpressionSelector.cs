@@ -63,13 +63,19 @@ public class GuiDialogExpressionSelector : GuiDialog
             ;
 
         var bh = capi.World.Player.Entity.GetBehavior<EntityBehaviorPlayerInventory>();
+        var skinAdapter = SkinAdapter.Get(capi.World.Player.Entity);
 
-        var skinMod = capi.World.Player.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
+        if (skinAdapter == null)
+        {
+            return;
+        }
 
-        bh.hideClothing = false;
+        if (bh != null)
+        {
+            bh.hideClothing = false;
+        }
 
-        var essr = capi.World.Player.Entity.Properties.Client.Renderer as EntityShapeRenderer;
-        essr.TesselateShape();
+        (capi.World.Player.Entity.Properties.Client.Renderer as EntityShapeRenderer)?.TesselateShape();
 
         var colorIconSize = 22;
 
@@ -83,9 +89,8 @@ public class GuiDialogExpressionSelector : GuiDialog
 
         double leftX = 0;
 
-
         var skinPartsToRender =
-            skinMod.AvailableSkinParts.Where(sp => sp.Code is "eyebrow" or "eye" or "mouth");
+            skinAdapter.AvailableSkinParts.Where(sp => sp.Code is "eyebrow" or "eye" or "mouth" or "facialexpression");
 
         foreach (var skinpart in skinPartsToRender)
         {
@@ -99,10 +104,13 @@ public class GuiDialogExpressionSelector : GuiDialog
 
             var code = skinpart.Code;
 
-            var appliedVar = skinMod.AppliedSkinParts.FirstOrDefault(sp => sp.PartCode == code);
+            var appliedVar = skinAdapter.AppliedSkinParts.FirstOrDefault(sp => sp.PartCode == code);
 
             var variants = skinpart.Variants.Where(p =>
                 variantCategories.Contains(p.Category) || (AllowKeepCurrent && p.Code == appliedVar.Code)).ToArray();
+
+            if (!skinpart.Variants.Any(p => variantCategories.Contains(p.Category)))
+                continue;
 
             if (skinpart.Type == EnumSkinnableType.Texture && !skinpart.UseDropDown)
             {
@@ -183,15 +191,17 @@ public class GuiDialogExpressionSelector : GuiDialog
 
     protected virtual void onToggleSkinPart(string partCode, string variantCode)
     {
-        var skinMod = capi.World.Player.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
-        skinMod.selectSkinPart(partCode, variantCode);
+        SkinAdapter.Get(capi.World.Player.Entity)?.SelectSkinPart(partCode, variantCode);
     }
 
     protected virtual void onToggleSkinPart(string partCode, int index)
     {
-        var skinMod = capi.World.Player.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
-        var variantCode = skinMod.AvailableSkinPartsByCode[partCode].Variants[index].Code;
-        skinMod.selectSkinPart(partCode, variantCode);
+        var adapter = SkinAdapter.Get(capi.World.Player.Entity);
+        var variantCode = adapter?.GetPart(partCode)?.Variants[index].Code;
+        if (variantCode != null)
+        {
+            adapter!.SelectSkinPart(partCode, variantCode);
+        }
     }
 
     protected virtual bool OnNext()
@@ -203,25 +213,37 @@ public class GuiDialogExpressionSelector : GuiDialog
     public override void OnGuiOpened()
     {
         ComposeGuis();
-        var essr = capi.World.Player.Entity.Properties.Client.Renderer as EntityShapeRenderer;
-        essr.TesselateShape();
+        (capi.World.Player.Entity.Properties.Client.Renderer as EntityShapeRenderer)?.TesselateShape();
     }
 
 
     public override void OnGuiClosed()
     {
-        var skinMod = capi.World.Player.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
-        if (skinMod == null)
+        var adapter = SkinAdapter.Get(capi.World.Player.Entity);
+        if (adapter == null)
         {
-            capi.Logger.Debug("Cannot access EntityBehaviorExtraSkinnable after selecting expression for some reason");
+            capi.Logger.Debug("Cannot access skin behavior after selecting expression");
+            return;
+        }
+
+        var parts = adapter.AppliedSkinParts;
+        var facialExpression = parts.FirstOrDefault(sp => sp.PartCode == "facialexpression");
+        var eyebrow = parts.FirstOrDefault(sp => sp.PartCode == "eyebrow");
+        var eye = parts.FirstOrDefault(sp => sp.PartCode == "eye");
+        var mouth = parts.FirstOrDefault(sp => sp.PartCode == "mouth");
+
+        if (facialExpression == null && (eyebrow == null || eye == null || mouth == null))
+        {
+            reTesselate();
             return;
         }
 
         var expressionSelectionPacket = new ExpressionSelectionPacket
         {
-            EyebrowsVariant = skinMod.AppliedSkinParts.First(sp => sp.PartCode == "eyebrow").Code,
-            EyesVariant = skinMod.AppliedSkinParts.First(sp => sp.PartCode == "eye").Code,
-            MouthVariant = skinMod.AppliedSkinParts.First(sp => sp.PartCode == "mouth").Code
+            FacialExpressionVariant = facialExpression?.Code,
+            EyebrowsVariant = eyebrow?.Code,
+            EyesVariant = eye?.Code,
+            MouthVariant = mouth?.Code
         };
 
         ExpressionsModSystem.ClientNetworkChannel.SendPacket(expressionSelectionPacket);
@@ -248,8 +270,14 @@ public class GuiDialogExpressionSelector : GuiDialog
 
     protected void reTesselate()
     {
-        var essr = capi.World.Player.Entity.Properties.Client.Renderer as EntityShapeRenderer;
-        essr.TesselateShape();
+        (capi.World.Player.Entity.Properties.Client.Renderer as EntityShapeRenderer)?.TesselateShape();
+    }
+
+    public static bool HasExpressionParts(ICoreClientAPI capi)
+    {
+        var adapter = SkinAdapter.Get(capi.World.Player.Entity);
+        return adapter != null &&
+               adapter.AvailableSkinParts.Any(sp => sp.Code is "eyebrow" or "eye" or "mouth" or "facialexpression");
     }
 
     public void PrepAndOpen()
@@ -320,13 +348,23 @@ public class GuiDialogExpressionSelector : GuiDialog
         capi.Render.CurrentActiveShader.Uniform("lightPosition", new Vec3f(lightRot.X, lightRot.Y, lightRot.Z));
         capi.Render.PushScissor(insetSlotBounds);
 
+        float guiModelScale = 1f;
+        try
+        {
+            guiModelScale = capi.World.Player.Entity.GetBehavior<PlayerModelLib.PlayerSkinBehavior>()?.CurrentModel.GuiModelScale ?? 1f;
+        }
+        catch { }
+        var entity = capi.World.Player.Entity;
+        var scaleFactor = MathF.Sqrt(entity.Properties.Client.Size * guiModelScale);
+        var baseSize = GuiElement.scaled(330 * charZoom);
         var posX = insetSlotBounds.renderX + pad - GuiElement.scaled(195) * charZoom +
                    GuiElement.scaled(115 * (1 - charZoom));
-        var posY = insetSlotBounds.renderY + pad + GuiElement.scaled(10 * (1 - charZoom));
+        var posY = insetSlotBounds.renderY + pad + GuiElement.scaled(10 * (1 - charZoom))
+                   - (1.0 - scaleFactor) * 1.9 * baseSize;
         double posZ = (float)GuiElement.scaled(230);
-        var size = (float)GuiElement.scaled(330 * charZoom);
+        var size = (float)baseSize;
 
-        capi.Render.RenderEntityToGui(deltaTime, capi.World.Player.Entity, posX, posY, posZ, yaw, size,
+        capi.Render.RenderEntityToGui(deltaTime, entity, posX, posY, posZ, yaw, size,
             ColorUtil.WhiteArgb);
         capi.Render.PopScissor();
         capi.Render.CurrentActiveShader.Uniform("lightPosition", new Vec3f(1, -1, 0).Normalize());

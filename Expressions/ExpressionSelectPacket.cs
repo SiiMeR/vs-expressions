@@ -10,4 +10,6 @@ public class ExpressionSelectionPacket
     [ProtoMember(2)] public string EyesVariant;
 
     [ProtoMember(3)] public string MouthVariant;
+
+    [ProtoMember(4)] public string FacialExpressionVariant;
 }

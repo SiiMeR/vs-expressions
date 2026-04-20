@@ -1,9 +1,7 @@
 ﻿using System.Linq;
-using System.Reflection;
 using HarmonyLib;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
-using Vintagestory.API.Datastructures;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 using Vintagestory.Server;
@@ -20,6 +18,7 @@ public class ExpressionsModSystem : ModSystem
     public override void StartClientSide(ICoreClientAPI api)
     {
         ClientApi = api;
+        RacialEqualityCompat.Register(api);
 
         ClientNetworkChannel = api.Network.RegisterChannel("exsel").RegisterMessageType<ExpressionSelectionPacket>();
 
@@ -62,6 +61,7 @@ public class ExpressionsModSystem : ModSystem
 
     public override void StartServerSide(ICoreServerAPI api)
     {
+        RacialEqualityCompat.Register(api);
         ServerNetworkChannel = api.Network.RegisterChannel("exsel").RegisterMessageType<ExpressionSelectionPacket>()
             .SetMessageHandler<ExpressionSelectionPacket>(OnExpressionSelectionPacket);
 
@@ -83,69 +83,52 @@ public class ExpressionsModSystem : ModSystem
 
         api.Event.PlayerNowPlaying += player =>
         {
-            var behavior = player.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
-            if (behavior == null)
+            var adapter = SkinAdapter.Get(player.Entity);
+            if (adapter == null) return;
+
+            var applied = adapter.AppliedSkinParts;
+
+            foreach (var part in adapter.AvailableSkinParts.Where(sp => sp.Code is "facialexpression" or "eyebrow" or "eye" or "mouth"))
             {
-                return;
+                if (applied.Any(sp => sp.PartCode == part.Code)) continue;
+                var variantCode = part.Variants.Any(v => v.Code == "neutral")
+                    ? "neutral"
+                    : part.Variants.FirstOrDefault()?.Code;
+                if (variantCode != null)
+                    UpdateExpression(player, part.Code, variantCode);
             }
 
-            if (behavior.AppliedSkinParts.All(sp => sp.PartCode != "eyebrow"))
+            if (applied.All(sp => sp.PartCode != "iriscolor"))
             {
-                UpdateExpression(player, "eyebrow", "neutral");
-            }
+                var value = player.Entity.WatchedAttributes
+                    .GetTreeAttribute("skinConfig")
+                    ?.GetTreeAttribute("appliedParts")
+                    ?.GetAsString("eyecolor");
 
-            if (behavior.AppliedSkinParts.All(sp => sp.PartCode != "eye"))
-            {
-                UpdateExpression(player, "eye", "neutral");
-            }
-
-            if (behavior.AppliedSkinParts.All(sp => sp.PartCode != "mouth"))
-            {
-                UpdateExpression(player, "mouth", "neutral");
-            }
-
-
-            if (behavior.AppliedSkinParts.All(sp => sp.PartCode != "iriscolor"))
-            {
-                var field = behavior.GetType()
-                    .GetField("skintree", BindingFlags.Instance | BindingFlags.NonPublic);
-
-                if (field == null)
-                {
-                    return;
-                }
-
-                var tree = (ITreeAttribute)field.GetValue(behavior);
-
-                if (tree == null)
-                {
-                    return;
-                }
-
-                var value = tree.GetTreeAttribute("appliedParts").GetAsString("eyecolor");
-
-                if (value == null)
-                {
-                    return;
-                }
-
-
-                UpdateExpression(player, "iriscolor", value);
+                if (value != null)
+                    UpdateExpression(player, "iriscolor", value);
             }
         };
     }
 
     private void OnExpressionSelectionPacket(IServerPlayer fromPlayer, ExpressionSelectionPacket packet)
     {
-        UpdateExpression(fromPlayer, "eyebrow", packet.EyebrowsVariant);
-        UpdateExpression(fromPlayer, "eye", packet.EyesVariant);
-        UpdateExpression(fromPlayer, "mouth", packet.MouthVariant);
+        if (packet.FacialExpressionVariant != null)
+            UpdateExpression(fromPlayer, "facialexpression", packet.FacialExpressionVariant);
+        if (packet.EyebrowsVariant != null)
+            UpdateExpression(fromPlayer, "eyebrow", packet.EyebrowsVariant);
+        if (packet.EyesVariant != null)
+            UpdateExpression(fromPlayer, "eye", packet.EyesVariant);
+        if (packet.MouthVariant != null)
+            UpdateExpression(fromPlayer, "mouth", packet.MouthVariant);
     }
 
     private TextCommandResult OnSelectExpression(TextCommandCallingArgs args)
     {
-        new GuiDialogExpressionSelector(ClientApi, ClientApi.ModLoader.GetModSystem<CharacterSystem>()).TryOpen();
+        if (!GuiDialogExpressionSelector.HasExpressionParts(ClientApi))
+            return TextCommandResult.Error("Your character race does not support expressions.");
 
+        new GuiDialogExpressionSelector(ClientApi, ClientApi.ModLoader.GetModSystem<CharacterSystem>()).TryOpen();
         return TextCommandResult.Success();
     }
 
@@ -181,19 +164,18 @@ public class ExpressionsModSystem : ModSystem
 
     public bool UpdateExpression(IServerPlayer fromPlayer, string facepart, string value)
     {
-        var behavior = fromPlayer.Entity.GetBehavior<EntityBehaviorExtraSkinnable>();
-        if (behavior == null)
-        {
-            return false;
-        }
+        var adapter = SkinAdapter.Get(fromPlayer.Entity);
+        if (adapter == null) return false;
 
-        if (!behavior.AvailableSkinPartsByCode[facepart].VariantsByCode.ContainsKey(value))
-        {
-            return false;
-        }
+        var part = adapter.GetPart(facepart);
+        if (part == null) return false;
+        bool hasVariant = part.VariantsByCode?.Count > 0
+            ? part.VariantsByCode.ContainsKey(value)
+            : part.Variants.Any(v => v.Code == value);
+        if (!hasVariant) return false;
 
-        behavior.selectSkinPart(facepart, value);
-        fromPlayer.Entity.WatchedAttributes.MarkPathDirty("skinConfig");
+        adapter.SelectSkinPart(facepart, value);
+        fromPlayer.Entity.WatchedAttributes.MarkAllDirty();
         fromPlayer.BroadcastPlayerData();
 
         return true;
