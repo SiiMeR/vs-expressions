@@ -41,7 +41,7 @@
             <Private>false</Private>
         </Reference>
         <Reference Include="PlayerModelLib">
-            <HintPath>$(AppData)\VSLInstallations\1.21.5\Cache\unpack\playermodellib_1.10.11.zip_47c6b182e2bf\PlayerModelLib.dll</HintPath>
+            <HintPath>$(AppData)\VSLInstallations\1.21.5-TLR\Cache\unpack\playermodellib_1.10.0.zip_3b5319e521e5\PlayerModelLib.dll</HintPath>
             <Private>false</Private>
         </Reference>
     </ItemGroup>
