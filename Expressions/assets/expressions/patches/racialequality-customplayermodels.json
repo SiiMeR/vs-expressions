@@ -161,8 +161,10 @@
       { "code": "neutral",  "shape": { "base": "expressions:eye/neutral" } },
       { "code": "sad",      "shape": { "base": "expressions:eye/sad" } },
       { "code": "serious",  "shape": { "base": "expressions:eye/serious" } },
-      { "code": "tired",    "shape": { "base": "expressions:eye/tired" } },
-      { "code": "very-sad", "shape": { "base": "expressions:eye/very-sad" } }
+      { "code": "tired",     "shape": { "base": "expressions:eye/tired" } },
+      { "code": "very-sad",  "shape": { "base": "expressions:eye/very-sad" } },
+      { "code": "eyelashes",   "shape": { "base": "expressions:eye/eyelashes" } },
+      { "code": "judgemental", "shape": { "base": "expressions:entity/humanoid/re/judgemental" } }
     ]
   }},
   { "op": "add", "path": "/human/SkinnableParts/-", "file": "racialequality:config/customplayermodels/human-char", "side": "Universal", "value": {
