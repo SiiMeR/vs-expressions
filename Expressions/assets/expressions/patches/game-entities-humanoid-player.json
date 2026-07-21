@@ -131,6 +131,12 @@
           "shape": {
             "base": "expressions:eyebrow/serene"
           }
+        },
+        {
+          "code": "alert",
+          "shape": {
+            "base": "expressions:eyebrow/alert"
+          }
         }
       ]
     },
@@ -275,6 +281,12 @@
           "shape": {
             "base": "expressions:eye/serene"
           }
+        },
+        {
+          "code": "alert",
+          "shape": {
+            "base": "expressions:eye/alert"
+          }
         }
       ]
     },
@@ -406,6 +418,12 @@
           "code": "serene",
           "shape": {
             "base": "expressions:mouth/serene"
+          }
+        },
+        {
+          "code": "alert",
+          "shape": {
+            "base": "expressions:mouth/alert"
           }
         }
       ]
