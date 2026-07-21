@@ -32,38 +32,38 @@
               "shade": true,
               "faces": {
                 "north": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [28, 15.5, 28.5, 16],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "east": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [0, 0, 1, 1],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "south": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [29, 15.5, 29.5, 16],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "west": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [28.5, 15.5, 29, 16],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "up": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [28.5, 15, 29, 15.5],
                   "rotation": 90,
                   "autoUv": false,
                   "snapUv": false
                 },
                 "down": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [28.5, 16, 29, 16.5],
                   "rotation": 90,
                   "autoUv": false,
@@ -80,38 +80,38 @@
               "shade": true,
               "faces": {
                 "north": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [29, 15.5, 29.5, 16],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "east": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [0, 0, 1, 1],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "south": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [30, 15.5, 30.5, 16],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "west": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [29.5, 15.5, 30, 16],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "up": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [29.5, 15, 30, 15.5],
                   "rotation": 90,
                   "autoUv": false,
                   "snapUv": false
                 },
                 "down": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [29.5, 16, 30, 16.5],
                   "rotation": 90,
                   "autoUv": false,
@@ -128,38 +128,38 @@
               "shade": true,
               "faces": {
                 "north": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [29.5, 14.5, 30, 15],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "east": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [0, 0, 1, 1],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "south": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [30.5, 14.5, 31, 15],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "west": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [30, 14.5, 30.5, 15],
                   "autoUv": false,
                   "snapUv": false
                 },
                 "up": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [30, 14, 30.5, 14.5],
                   "rotation": 90,
                   "autoUv": false,
                   "snapUv": false
                 },
                 "down": {
-                  "texture": "parttexture",
+                  "texture": "#parttexture",
                   "uv": [30, 15, 30.5, 15.5],
                   "rotation": 90,
                   "autoUv": false,

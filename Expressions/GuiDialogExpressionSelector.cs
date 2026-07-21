@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using Vintagestory.API.Client;
 using Vintagestory.API.Config;
 using Vintagestory.API.MathTools;
@@ -348,12 +349,7 @@ public class GuiDialogExpressionSelector : GuiDialog
         capi.Render.CurrentActiveShader.Uniform("lightPosition", new Vec3f(lightRot.X, lightRot.Y, lightRot.Z));
         capi.Render.PushScissor(insetSlotBounds);
 
-        float guiModelScale = 1f;
-        try
-        {
-            guiModelScale = capi.World.Player.Entity.GetBehavior<PlayerModelLib.PlayerSkinBehavior>()?.CurrentModel.GuiModelScale ?? 1f;
-        }
-        catch { }
+        var guiModelScale = capi.ModLoader.IsModEnabled("playermodellib") ? GetPmlGuiModelScale(capi) : 1f;
         var entity = capi.World.Player.Entity;
         var scaleFactor = MathF.Sqrt(entity.Properties.Client.Size * guiModelScale);
         var baseSize = GuiElement.scaled(330 * charZoom);
@@ -369,6 +365,12 @@ public class GuiDialogExpressionSelector : GuiDialog
         capi.Render.PopScissor();
         capi.Render.CurrentActiveShader.Uniform("lightPosition", new Vec3f(1, -1, 0).Normalize());
         capi.Render.GlPopMatrix();
+    }
+
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    private static float GetPmlGuiModelScale(ICoreClientAPI capi)
+    {
+        return capi.World.Player.Entity.GetBehavior<PlayerModelLib.PlayerSkinBehavior>()?.CurrentModel.GuiModelScale ?? 1f;
     }
 
     #endregion

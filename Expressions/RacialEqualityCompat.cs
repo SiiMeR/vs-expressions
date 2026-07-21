@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Runtime.CompilerServices;
 using PlayerModelLib;
 using Vintagestory.API.Common;
 
@@ -7,6 +8,13 @@ namespace Expressions;
 internal static class RacialEqualityCompat
 {
     internal static void Register(ICoreAPI api)
+    {
+        if (!api.ModLoader.IsModEnabled("playermodellib")) return;
+        RegisterInternal(api);
+    }
+
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    private static void RegisterInternal(ICoreAPI api)
     {
         var modelsSystem = api.ModLoader.GetModSystem<CustomModelsSystem>();
         if (modelsSystem == null) return;
