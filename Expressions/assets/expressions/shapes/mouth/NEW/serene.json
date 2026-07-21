@@ -1,0 +1,188 @@
+{
+  "editor": {
+    "collapsedPaths": "Root/root/LowerTorso/UpperFootL,Root/root/LowerTorso/UpperTorso,Root/root/LowerTorso/UpperFootR,Root/eyesroot",
+    "allAngles": true,
+    "entityTextureMode": true
+  },
+  "textureWidth": 32,
+  "textureHeight": 76,
+  "textureSizes": {},
+  "textures": {
+    "parttexture": "seraph-for-eyes-black"
+  },
+  "elements": [
+    {
+      "name": "eyesroot",
+      "from": [0, 0, 0],
+      "to": [0, 0, 0],
+      "rotationOrigin": [0, 0, 0],
+      "children": [
+        {
+          "name": "Mouth2",
+          "from": [-0.1, 0.6, 2.5],
+          "to": [-0.1, 0.6, 2.5],
+          "rotationOrigin": [-0.1, 0.6, 2.5],
+          "children": [
+            {
+              "name": "mouth L",
+              "from": [0.05, 0.06, -0.5],
+              "to": [0.15, 0.36, 0],
+              "rotationOrigin": [0.05, 0.15, 0],
+              "uv": [28, 8],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "parttexture",
+                  "uv": [28, 15.5, 28.5, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "east": {
+                  "texture": "parttexture",
+                  "uv": [0, 0, 1, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "south": {
+                  "texture": "parttexture",
+                  "uv": [29, 15.5, 29.5, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "west": {
+                  "texture": "parttexture",
+                  "uv": [28.5, 15.5, 29, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "up": {
+                  "texture": "parttexture",
+                  "uv": [28.5, 15, 29, 15.5],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "down": {
+                  "texture": "parttexture",
+                  "uv": [28.5, 16, 29, 16.5],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                }
+              }
+            },
+            {
+              "name": "mouth R",
+              "from": [0.05, 0.06, 0],
+              "to": [0.15, 0.36, 0.5],
+              "rotationOrigin": [0.05, 0.15, 0],
+              "uv": [30, 8],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "parttexture",
+                  "uv": [29, 15.5, 29.5, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "east": {
+                  "texture": "parttexture",
+                  "uv": [0, 0, 1, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "south": {
+                  "texture": "parttexture",
+                  "uv": [30, 15.5, 30.5, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "west": {
+                  "texture": "parttexture",
+                  "uv": [29.5, 15.5, 30, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "up": {
+                  "texture": "parttexture",
+                  "uv": [29.5, 15, 30, 15.5],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "down": {
+                  "texture": "parttexture",
+                  "uv": [29.5, 16, 30, 16.5],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                }
+              }
+            },
+            {
+              "name": "mouth_geo",
+              "from": [0, 0.075, -0.25],
+              "to": [0.1, 0.375, 0.25],
+              "rotationOrigin": [0, 0.175, -0.25],
+              "uv": [29, 8.5],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "parttexture",
+                  "uv": [29.5, 14.5, 30, 15],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "east": {
+                  "texture": "parttexture",
+                  "uv": [0, 0, 1, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "south": {
+                  "texture": "parttexture",
+                  "uv": [30.5, 14.5, 31, 15],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "west": {
+                  "texture": "parttexture",
+                  "uv": [30, 14.5, 30.5, 15],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "up": {
+                  "texture": "parttexture",
+                  "uv": [30, 14, 30.5, 14.5],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "down": {
+                  "texture": "parttexture",
+                  "uv": [30, 15, 30.5, 15.5],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "stepParentName": "Head",
+      "attachmentpoints": [
+        {
+          "code": "Eyes",
+          "posX": "1.3",
+          "posY": "3.5",
+          "posZ": "2.5",
+          "rotationX": "0",
+          "rotationY": "-90",
+          "rotationZ": "0"
+        }
+      ]
+    }
+  ],
+  "animations": []
+}

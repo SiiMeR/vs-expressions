@@ -1,0 +1,596 @@
+{
+  "editor": {
+    "collapsedPaths": "Root/root/LowerTorso/UpperFootL,Root/root/LowerTorso/UpperTorso,Root/root/LowerTorso/UpperFootR,Root/eyesroot",
+    "allAngles": true,
+    "entityTextureMode": true
+  },
+  "textureWidth": 32,
+  "textureHeight": 76,
+  "textureSizes": {
+    "iris": [8, 8]
+  },
+  "textures": {
+    "parttexture": "seraph-for-eyes-black",
+    "iris": "red"
+  },
+  "elements": [
+    {
+      "name": "eyesroot",
+      "from": [0, 0, 0],
+      "to": [0, 0, 0],
+      "rotationOrigin": [0, 0, 0],
+      "children": [
+        {
+          "name": "Eye",
+          "from": [0, 1.75, 2.1],
+          "to": [0, 1.75, 2.1],
+          "rotationOrigin": [0, 1.75, 2.1],
+          "children": [
+            {
+              "name": "L eye",
+              "from": [0, 0, -17.2],
+              "to": [0, 0, -17.2],
+              "rotationOrigin": [0, 0, -17.2],
+              "children": [
+                {
+                  "name": "eyelid r",
+                  "from": [-0.1, 0.15, 18.55],
+                  "to": [0, 0.4, 19.4],
+                  "rotationOrigin": [-0.1, 0.25, 18.05],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [32, 15, 31.5, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 15, 30, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [31.5, 15, 30.5, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [31.5, 14.5, 30.5, 15],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [31.5, 15.5, 30.5, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -10,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0.525, 18.05],
+                  "to": [0, 0.775, 18.6],
+                  "rotationOrigin": [-0.1, 0.625, 17.25],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 15.5, 29, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 15.5, 28, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15.5, 28.5, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15, 28.5, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29, 16, 28.5, 16.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 12.5,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0, 19.1],
+                  "to": [0, 0.15, 19.225],
+                  "rotationOrigin": [-0.1, 0.25, 17.975],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 15, 30, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 15, 29, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30, 15, 29.5, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14.5, 29.5, 15],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30, 15.5, 29.5, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -10,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, -0.075, 18.775],
+                  "to": [0, 0.1, 18.9],
+                  "rotationOrigin": [-0.1, 0.2, 17.65],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 16, 29, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 16, 28, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29, 16, 28.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15.5, 28.5, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29, 16.5, 28.5, 17],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -10,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0.125, 18.475],
+                  "to": [0, 0.3, 18.6],
+                  "rotationOrigin": [-0.1, 0.375, 17.35],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [31, 16, 30.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30, 16, 29.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 16, 30, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 15.5, 30, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 16.5, 30, 17],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                }
+              ]
+            },
+            {
+              "name": "R eye",
+              "from": [0, 0, 2],
+              "to": [0, 0, 2],
+              "rotationOrigin": [0, 0, 2],
+              "children": [
+                {
+                  "name": "eyelid r",
+                  "from": [-0.1, 0.15, -3.4],
+                  "to": [0, 0.4, -2.55],
+                  "rotationOrigin": [-0.1, 0.25, -2.05],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30, 15, 30.5, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [31.5, 15, 32, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 15, 31.5, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 14.5, 31.5, 15],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 15.5, 31.5, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 10
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0.525, -2.6],
+                  "to": [0, 0.775, -2.05],
+                  "rotationOrigin": [-0.1, 0.625, -1.25],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [28, 15.5, 28.5, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15.5, 29.5, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 15.5, 29, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 15, 29, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 16, 29, 16.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -12.5,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0, -3.225],
+                  "to": [0, 0.15, -3.1],
+                  "rotationOrigin": [-0.1, 0.25, -1.975],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15, 29.5, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30, 15, 30.5, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 15, 30, 15.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 14.5, 30, 15],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 15.5, 30, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 10,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, -0.075, -2.9],
+                  "to": [0, 0.1, -2.775],
+                  "rotationOrigin": [-0.1, 0.2, -1.65],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [28, 16, 28.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29, 16, 29.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 16, 29, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 15.5, 29, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 16.5, 29, 17],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 10,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0.125, -2.6],
+                  "to": [0, 0.3, -2.475],
+                  "rotationOrigin": [-0.1, 0.375, -1.35],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 16, 30, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 16, 31, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30, 16, 30.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30, 15.5, 30.5, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30, 16.5, 30.5, 17],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stepParentName": "Head",
+      "attachmentpoints": [
+        {
+          "code": "Eyes",
+          "posX": "1.3",
+          "posY": "3.5",
+          "posZ": "2.5",
+          "rotationX": "0",
+          "rotationY": "-90",
+          "rotationZ": "0"
+        }
+      ]
+    }
+  ],
+  "animations": []
+}

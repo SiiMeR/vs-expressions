@@ -125,6 +125,12 @@
           "shape": {
             "base": "expressions:eyebrow/weary"
           }
+        },
+        {
+          "code": "serene",
+          "shape": {
+            "base": "expressions:eyebrow/serene"
+          }
         }
       ]
     },
@@ -263,6 +269,12 @@
           "shape": {
             "base": "expressions:eye/weary"
           }
+        },
+        {
+          "code": "serene",
+          "shape": {
+            "base": "expressions:eye/serene"
+          }
         }
       ]
     },
@@ -388,6 +400,12 @@
           "code": "weary",
           "shape": {
             "base": "expressions:mouth/weary"
+          }
+        },
+        {
+          "code": "serene",
+          "shape": {
+            "base": "expressions:mouth/serene"
           }
         }
       ]
