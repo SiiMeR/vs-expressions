@@ -1,11 +1,16 @@
 {
   "editor": {
+    "backDropShape": "C:/Users/Bruger/AppData/Roaming/Vintagestory/assets/game/shapes/entity/humanoid/seraph-hairless",
     "collapsedPaths": ",Root/LowerArmROrigin,Root/LowerArmLOrigin",
-    "allAngles": false
+    "allAngles": false,
+    "entityTextureMode": true,
+    "singleTexture": false,
+    "vsFormatConverted": false
   },
   "textureWidth": 32,
   "textureHeight": 76,
   "textureSizes": {
+    "parttexture": [32, 76],
     "iris": [8, 8]
   },
   "textures": {
@@ -27,9 +32,9 @@
           "children": [
             {
               "name": "R_eye2",
-              "from": [0, 0, 0],
-              "to": [0, 0, 0],
-              "rotationOrigin": [0, 0, 0],
+              "from": [0, -0.05, 0],
+              "to": [0, -0.05, 0],
+              "rotationOrigin": [0, -0.05, 0],
               "rotationX": -3,
               "children": [
                 {
@@ -210,38 +215,38 @@
                   "faces": {
                     "north": {
                       "texture": "#iris",
-                      "uv": [32, 0.5, 31.5, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "east": {
                       "texture": "#iris",
-                      "uv": [1, 0, 0, 1],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "south": {
                       "texture": "#iris",
-                      "uv": [30.5, 0.5, 30, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "west": {
                       "texture": "#iris",
-                      "uv": [31.5, 0.5, 30.5, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "up": {
                       "texture": "#iris",
-                      "uv": [31.5, 0, 30.5, 0.5],
+                      "uv": [2, 0, 5, 3],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
                     },
                     "down": {
                       "texture": "#iris",
-                      "uv": [31.5, 1.5, 30.5, 2],
+                      "uv": [2, 0, 5, 3],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
@@ -264,38 +269,38 @@
                   "faces": {
                     "north": {
                       "texture": "#iris",
-                      "uv": [30.5, 1, 31, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "east": {
                       "texture": "#iris",
-                      "uv": [1, 0, 0, 1],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "south": {
                       "texture": "#iris",
-                      "uv": [31.5, 1, 32, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "west": {
                       "texture": "#iris",
-                      "uv": [31, 1, 31.5, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "up": {
                       "texture": "#iris",
-                      "uv": [31, 0.5, 31.5, 1],
+                      "uv": [2, 0, 5, 3],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
                     },
                     "down": {
                       "texture": "#iris",
-                      "uv": [31, 1.5, 31.5, 2],
+                      "uv": [2, 0, 5, 3],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
@@ -630,6 +635,62 @@
                   "gradientShade": false,
                   "renderPass": 0,
                   "seasonColorMap": ""
+                },
+                {
+                  "name": "L Sclera",
+                  "from": [0.01111, 0.51366, -1.84626],
+                  "to": [0.11111, 1.01366, -1.36626],
+                  "rotationOrigin": [0.01111, -0.01134, -1.81626],
+                  "uv": [28, 0],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30, 4.5, 30.5, 5.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [31.5, 4.5, 32, 5.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 4.5, 31.5, 5.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 4, 31.5, 4.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 5.5, 31.5, 6],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 56.5,
+                  "rotationY": 0,
+                  "rotationZ": 0,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
                 }
               ]
             },
@@ -818,38 +879,38 @@
                   "faces": {
                     "north": {
                       "texture": "#iris",
-                      "uv": [28, 0.5, 28.5, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "east": {
                       "texture": "#iris",
-                      "uv": [0, 0, 1, 1],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "south": {
                       "texture": "#iris",
-                      "uv": [29.5, 0.5, 30, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "west": {
                       "texture": "#iris",
-                      "uv": [28.5, 0.5, 29.5, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "up": {
                       "texture": "#iris",
-                      "uv": [28.5, 0, 29.5, 0.5],
+                      "uv": [2, 0, 5, 3],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
                     },
                     "down": {
                       "texture": "#iris",
-                      "uv": [28.5, 1.5, 29.5, 2],
+                      "uv": [2, 0, 5, 3],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
@@ -872,38 +933,38 @@
                   "faces": {
                     "north": {
                       "texture": "#iris",
-                      "uv": [28, 1, 28.5, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "east": {
                       "texture": "#iris",
-                      "uv": [0, 0, 1, 1],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "south": {
                       "texture": "#iris",
-                      "uv": [29, 1, 29.5, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "west": {
                       "texture": "#iris",
-                      "uv": [28.5, 1, 29, 1.5],
+                      "uv": [2, 0, 5, 3],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "up": {
                       "texture": "#iris",
-                      "uv": [28.5, 0.5, 29, 1],
+                      "uv": [2, 0, 5, 3],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
                     },
                     "down": {
                       "texture": "#iris",
-                      "uv": [28.5, 1.5, 29, 2],
+                      "uv": [2, 0, 5, 3],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
@@ -917,64 +978,10 @@
                   "seasonColorMap": ""
                 },
                 {
-                  "name": "R Sclera",
-                  "from": [-0.01, 0.5, -1.9],
-                  "to": [0.09, 1, -1.4],
-                  "rotationOrigin": [-0.01, 0, -1.85],
-                  "uv": [28, 0],
-                  "shade": true,
-                  "faces": {
-                    "north": {
-                      "texture": "#parttexture",
-                      "uv": [28, 4.5, 28.5, 5.5],
-                      "autoUv": false,
-                      "snapUv": false
-                    },
-                    "east": {
-                      "texture": "#parttexture",
-                      "uv": [0, 0, 1, 1],
-                      "autoUv": false,
-                      "snapUv": false
-                    },
-                    "south": {
-                      "texture": "#parttexture",
-                      "uv": [29.5, 4.5, 30, 5.5],
-                      "autoUv": false,
-                      "snapUv": false
-                    },
-                    "west": {
-                      "texture": "#parttexture",
-                      "uv": [28.5, 4.5, 29.5, 5.5],
-                      "autoUv": false,
-                      "snapUv": false
-                    },
-                    "up": {
-                      "texture": "#parttexture",
-                      "uv": [28.5, 4, 29.5, 4.5],
-                      "rotation": 90,
-                      "autoUv": false,
-                      "snapUv": false
-                    },
-                    "down": {
-                      "texture": "#parttexture",
-                      "uv": [28.5, 5.5, 29.5, 6],
-                      "rotation": 90,
-                      "autoUv": false,
-                      "snapUv": false
-                    }
-                  },
-                  "rotationX": 46.25,
-
-                  "climateColorMap": "",
-                  "gradientShade": false,
-                  "renderPass": 0,
-                  "seasonColorMap": ""
-                },
-                {
                   "name": "L Sclera",
-                  "from": [-0.01, 0.45, 2.2],
-                  "to": [0.09, 0.95, 2.69],
-                  "rotationOrigin": [-0.01, -0.05, 2.65],
+                  "from": [-0.01, 0.725, 2.225],
+                  "to": [0.09, 1.225, 2.705],
+                  "rotationOrigin": [-0.01, 0.2, 2.675],
                   "uv": [28, 0],
                   "shade": true,
                   "faces": {
@@ -1017,7 +1024,7 @@
                       "snapUv": false
                     }
                   },
-                  "rotationX": -46.25,
+                  "rotationX": -50.5,
 
                   "climateColorMap": "",
                   "gradientShade": false,

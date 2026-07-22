@@ -1,0 +1,150 @@
+{
+  "editor": {
+    "backDropShape": "C:/Users/Bruger/AppData/Roaming/Vintagestory/assets/game/shapes/entity/humanoid/seraph-hairless",
+    "collapsedPaths": ",Root/LowerArmROrigin,Root/LowerArmLOrigin",
+    "allAngles": false,
+    "entityTextureMode": true,
+    "singleTexture": false,
+    "vsFormatConverted": false
+  },
+  "textureWidth": 32,
+  "textureHeight": 76,
+  "textureSizes": {
+    "parttexture": [32, 76]
+  },
+  "textures": {
+    "parttexture": "seraph-for-eyes-black"
+  },
+  "elements": [
+    {
+      "name": "mouth2",
+      "from": [-0.1, 0.525, 2.35],
+      "to": [-0.1, 0.525, 2.35],
+      "rotationOrigin": [-0.1, 0.525, 2.35],
+      "rotationX": -4,
+      "children": [
+        {
+          "name": "mouth L",
+          "from": [0.05, -0.19, -0.5],
+          "to": [0.15, 0.11, 0.9],
+          "rotationOrigin": [0.05, -0.1, 0.2],
+          "uv": [28, 8],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#parttexture",
+              "uv": [28, 15, 28.5, 15.5],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "east": {
+              "texture": "#parttexture",
+              "uv": [0, 0, 1, 1],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "south": {
+              "texture": "#parttexture",
+              "uv": [30.5, 15, 31, 15.5],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "west": {
+              "texture": "#parttexture",
+              "uv": [28.5, 15, 30.5, 15.5],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "up": {
+              "texture": "#parttexture",
+              "uv": [28.5, 14.5, 30.5, 15],
+              "rotation": 90,
+              "autoUv": false,
+              "snapUv": false
+            },
+            "down": {
+              "texture": "#parttexture",
+              "uv": [28.5, 15.5, 30.5, 16],
+              "rotation": 90,
+              "autoUv": false,
+              "snapUv": false
+            }
+          },
+          "rotationX": 4,
+
+          "climateColorMap": "",
+          "gradientShade": false,
+          "renderPass": 0,
+          "seasonColorMap": ""
+        },
+        {
+          "name": "mouth_geo",
+          "from": [0, -0.15, -0.15],
+          "to": [0.1, 0.15, 0.55],
+          "rotationOrigin": [0, -0.05, -0.15],
+          "uv": [29, 8.5],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#parttexture",
+              "uv": [28.5, 15.5, 29, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "east": {
+              "texture": "#parttexture",
+              "uv": [0, 0, 1, 1],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "south": {
+              "texture": "#parttexture",
+              "uv": [30, 15.5, 30.5, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "west": {
+              "texture": "#parttexture",
+              "uv": [29, 15.5, 30, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "up": {
+              "texture": "#parttexture",
+              "uv": [29, 15, 30, 15.5],
+              "rotation": 90,
+              "autoUv": false,
+              "snapUv": false
+            },
+            "down": {
+              "texture": "#parttexture",
+              "uv": [29, 16, 30, 16.5],
+              "rotation": 90,
+              "autoUv": false,
+              "snapUv": false
+            }
+          },
+          "rotationX": 4,
+
+          "climateColorMap": "",
+          "gradientShade": false,
+          "renderPass": 0,
+          "seasonColorMap": ""
+        }
+      ],
+      "stepParentName": "Head",
+      "attachmentpoints": [
+        {
+          "code": "Eyes",
+          "posX": "1.3",
+          "posY": "3.5",
+          "posZ": "2.5",
+          "rotationX": "0",
+          "rotationY": "-90",
+          "rotationZ": "0"
+        }
+      ]
+    }
+  ],
+  "animations": []
+}

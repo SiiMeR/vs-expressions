@@ -28,10 +28,10 @@
           "children": [
             {
               "name": "R eyebrow 1",
-              "from": [0, 0, 0],
-              "to": [0, 0, 0],
-              "rotationOrigin": [0, 0, 0],
-              "rotationX": 13.5,
+              "from": [0, 0, 0.1],
+              "to": [0, 0, 0.1],
+              "rotationOrigin": [0, 0, 0.1],
+              "rotationX": -8,
               "children": [
                 {
                   "name": "R eyebrow 2",
@@ -84,7 +84,6 @@
                   "rotationX": -7.24779,
                   "rotationY": 0.26302,
                   "rotationZ": -0.96479,
-
                   "climateColorMap": "",
                   "gradientShade": false,
                   "renderPass": 0,
@@ -138,7 +137,6 @@
                     }
                   },
                   "rotationX": 21.5,
-
                   "climateColorMap": "",
                   "gradientShade": false,
                   "renderPass": 0,
@@ -148,16 +146,16 @@
             },
             {
               "name": "R_eyebrow_2",
-              "from": [0, 0, -13.57366],
-              "to": [0, 0, -13.57366],
-              "rotationOrigin": [0, 0, -13.57366],
-              "rotationX": -13.5,
+              "from": [0, -0.00651, 2.34979],
+              "to": [0, -0.00651, 2.34979],
+              "rotationOrigin": [0, -0.00651, 2.34979],
+              "rotationX": 8,
               "children": [
                 {
                   "name": "R eyebrow 2",
-                  "from": [-0.05023, -0.05254, 15.93645],
-                  "to": [0.04977, 0.24746, 16.83645],
-                  "rotationOrigin": [-0.05023, -0.05254, 15.93645],
+                  "from": [-0.05023, -0.05122, -0.10492],
+                  "to": [0.04977, 0.24878, 0.79508],
+                  "rotationOrigin": [-0.05023, -0.05122, -0.10492],
                   "uv": [28, 12.5],
                   "shade": true,
                   "faces": {
@@ -203,7 +201,6 @@
                   "rotationX": 7.24779,
                   "rotationY": -0.26302,
                   "rotationZ": -0.96479,
-
                   "climateColorMap": "",
                   "gradientShade": false,
                   "renderPass": 0,
@@ -211,9 +208,9 @@
                 },
                 {
                   "name": "R eyebrow 1_geo",
-                  "from": [-0.05023, -0.05254, 15.36145],
-                  "to": [0.04977, 0.24746, 16.06145],
-                  "rotationOrigin": [-0.05023, -0.05254, 16.06145],
+                  "from": [-0.05023, -0.05122, -0.67992],
+                  "to": [0.04977, 0.24878, 0.02008],
+                  "rotationOrigin": [-0.05023, -0.05122, 0.02008],
                   "uv": [28, 10.5],
                   "shade": true,
                   "faces": {
@@ -257,7 +254,6 @@
                     }
                   },
                   "rotationX": -21.5,
-
                   "climateColorMap": "",
                   "gradientShade": false,
                   "renderPass": 0,

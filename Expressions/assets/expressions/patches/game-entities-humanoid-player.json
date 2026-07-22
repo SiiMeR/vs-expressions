@@ -138,6 +138,12 @@
           "shape": {
             "base": "expressions:eyebrow/alert"
           }
+        },
+        {
+          "code": "deadpan",
+          "shape": {
+            "base": "expressions:eyebrow/deadpan"
+          }
         }
       ]
     },
@@ -288,6 +294,12 @@
           "shape": {
             "base": "expressions:eye/alert"
           }
+        },
+        {
+          "code": "deadpan",
+          "shape": {
+            "base": "expressions:eye/deadpan"
+          }
         }
       ]
     },
@@ -425,6 +437,12 @@
           "code": "alert",
           "shape": {
             "base": "expressions:mouth/alert"
+          }
+        },
+        {
+          "code": "deadpan",
+          "shape": {
+            "base": "expressions:mouth/deadpan"
           }
         }
       ]
