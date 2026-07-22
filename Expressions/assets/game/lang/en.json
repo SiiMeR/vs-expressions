@@ -28,6 +28,7 @@
   "skinpart-eyebrow-unbothered": "Unbothered",
   "skinpart-eyebrow-unimpressed": "Unimpressed",
   "skinpart-eyebrow-wry": "Wry",
+  "skinpart-eyebrow-bossy": "Bossy",
   "skinpart-eye": "Eyes",
   "skinpart-eye-adequate": "Adequate",
   "skinpart-eye-angry": "Angry",
@@ -58,6 +59,7 @@
   "skinpart-eye-unbothered": "Unbothered",
   "skinpart-eye-unimpressed": "Unimpressed",
   "skinpart-eye-wry": "Wry",
+  "skinpart-eye-bossy": "Bossy",
   "skinpart-mouth": "Mouth",
   "skinpart-mouth-adequate": "Adequate",
   "skinpart-mouth-angry": "Angry",
@@ -85,5 +87,10 @@
   "skinpart-mouth-traumatised": "Traumatised",
   "skinpart-mouth-unbothered": "Unbothered",
   "skinpart-mouth-unimpressed": "Unimpressed",
-  "skinpart-mouth-wry": "Wry"
+  "skinpart-mouth-wry": "Wry",
+  "skinpart-mouth-bossy-nude": "Bossy (Nude)",
+  "skinpart-mouth-bossy-pink": "Bossy (Pink)",
+  "skinpart-mouth-bossy-red": "Bossy (Red)",
+  "skinpart-mouth-bossy-green": "Bossy (Green)",
+  "skinpart-mouth-bossy-black": "Bossy (Black)"
 }
