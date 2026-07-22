@@ -43,7 +43,7 @@
                   "faces": {
                     "north": {
                       "texture": "#hair",
-                      "uv": [27, 15.5, 27.5, 16],
+                      "uv": [26.5, 15.5, 27, 16],
                       "autoUv": false,
                       "snapUv": false
                     },
@@ -61,20 +61,21 @@
                     },
                     "west": {
                       "texture": "#hair",
-                      "uv": [27.5, 15.5, 28, 16],
+                      "uv": [27, 15.5, 28, 16],
+                      "rotation": 180,
                       "autoUv": false,
                       "snapUv": false
                     },
                     "up": {
                       "texture": "#hair",
-                      "uv": [27.5, 15, 28, 15.5],
+                      "uv": [27, 15, 28, 15.5],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
                     },
                     "down": {
                       "texture": "#hair",
-                      "uv": [27.5, 16, 28, 16.5],
+                      "uv": [27, 16, 28, 16.5],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
@@ -162,7 +163,7 @@
                   "faces": {
                     "north": {
                       "texture": "#hair",
-                      "uv": [27, 15.5, 27.5, 16],
+                      "uv": [26.5, 15.5, 27, 16],
                       "autoUv": false,
                       "snapUv": false
                     },
@@ -180,20 +181,20 @@
                     },
                     "west": {
                       "texture": "#hair",
-                      "uv": [27.5, 15.5, 28, 16],
+                      "uv": [27, 15.5, 28, 16],
                       "autoUv": false,
                       "snapUv": false
                     },
                     "up": {
                       "texture": "#hair",
-                      "uv": [27.5, 15, 28, 15.5],
+                      "uv": [27, 15, 28, 15.5],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
                     },
                     "down": {
                       "texture": "#hair",
-                      "uv": [27.5, 16, 28, 16.5],
+                      "uv": [27, 16, 28, 16.5],
                       "rotation": 90,
                       "autoUv": false,
                       "snapUv": false
