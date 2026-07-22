@@ -1,0 +1,209 @@
+{
+  "editor": {
+    "backDropShape": "C:/Users/Bruger/AppData/Roaming/Vintagestory/assets/game/shapes/entity/humanoid/seraph-hairless",
+    "collapsedPaths": ",Root/LowerArmROrigin,Root/LowerArmLOrigin",
+    "allAngles": false,
+    "entityTextureMode": true,
+    "singleTexture": false,
+    "vsFormatConverted": false
+  },
+  "textureWidth": 32,
+  "textureHeight": 76,
+  "textureSizes": {},
+  "textures": {
+    "parttexture": "seraph-for-eyes-black"
+  },
+  "elements": [
+    {
+      "name": "eyesroot2",
+      "from": [-0.1, 0.6, 2.5],
+      "to": [-0.1, 0.6, 2.5],
+      "rotationOrigin": [-0.1, 0.6, 2.5],
+      "children": [
+        {
+          "name": "mouth2",
+          "from": [0, 0, 0],
+          "to": [0, 0, 0],
+          "rotationOrigin": [0, 0, 0],
+          "children": [
+            {
+              "name": "mouth L",
+              "from": [0.05, 0.01, -0.4],
+              "to": [0.15, 0.31, 0.2],
+              "rotationOrigin": [0.05, 0.1, 0.2],
+              "uv": [28, 8],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [28, 15, 28.5, 15.5],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "east": {
+                  "texture": "#parttexture",
+                  "uv": [0, 0, 1, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [29, 15, 29.5, 15.5],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [28.5, 15, 29, 15.5],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [28.5, 14.5, 29, 15],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [28.5, 15.5, 29, 16],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                }
+              },
+              "rotationX": 8,
+
+              "climateColorMap": "",
+              "gradientShade": false,
+              "renderPass": 0,
+              "seasonColorMap": ""
+            },
+            {
+              "name": "mouth R",
+              "from": [0.05, 0.01, 0.2],
+              "to": [0.15, 0.31, 0.8],
+              "rotationOrigin": [0.05, 0.1, 0.2],
+              "uv": [30, 8],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [30, 15, 30.5, 15.5],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "east": {
+                  "texture": "#parttexture",
+                  "uv": [0, 0, 1, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [31, 15, 31.5, 15.5],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 15, 31, 15.5],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 14.5, 31, 15],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [30.5, 15.5, 31, 16],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                }
+              },
+              "rotationX": 8,
+
+              "climateColorMap": "",
+              "gradientShade": false,
+              "renderPass": 0,
+              "seasonColorMap": ""
+            },
+            {
+              "name": "mouth_geo",
+              "from": [0, 0.05, -0.05],
+              "to": [0.1, 0.35, 0.45],
+              "rotationOrigin": [0, 0.15, -0.05],
+              "uv": [29, 8.5],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#parttexture",
+                  "uv": [29, 15.5, 29.5, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "east": {
+                  "texture": "#parttexture",
+                  "uv": [0, 0, 1, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "south": {
+                  "texture": "#parttexture",
+                  "uv": [30, 15.5, 30.5, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "west": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 15.5, 30, 16],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "up": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 15, 30, 15.5],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "down": {
+                  "texture": "#parttexture",
+                  "uv": [29.5, 16, 30, 16.5],
+                  "rotation": 90,
+                  "autoUv": false,
+                  "snapUv": false
+                }
+              },
+              "rotationX": 8,
+
+              "climateColorMap": "",
+              "gradientShade": false,
+              "renderPass": 0,
+              "seasonColorMap": ""
+            }
+          ]
+        }
+      ],
+      "stepParentName": "Head",
+      "attachmentpoints": [
+        {
+          "code": "Eyes",
+          "posX": "1.3",
+          "posY": "3.5",
+          "posZ": "2.5",
+          "rotationX": "0",
+          "rotationY": "-90",
+          "rotationZ": "0"
+        }
+      ]
+    }
+  ],
+  "animations": []
+}

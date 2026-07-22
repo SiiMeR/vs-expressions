@@ -23,6 +23,8 @@
   "skinpart-eyebrow-serene": "Serene",
   "skinpart-eyebrow-alert": "Alert",
   "skinpart-eyebrow-deadpan": "Deadpan",
+  "skinpart-eyebrow-meek": "Meek",
+  "skinpart-eyebrow-traumatised": "Traumatised",
   "skinpart-eye": "Eyes",
   "skinpart-eye-adequate": "Adequate",
   "skinpart-eye-angry": "Angry",
@@ -48,6 +50,8 @@
   "skinpart-eye-serene": "Serene",
   "skinpart-eye-alert": "Alert",
   "skinpart-eye-deadpan": "Deadpan",
+  "skinpart-eye-meek": "Meek",
+  "skinpart-eye-traumatised": "Traumatised",
   "skinpart-mouth": "Mouth",
   "skinpart-mouth-adequate": "Adequate",
   "skinpart-mouth-angry": "Angry",
@@ -70,5 +74,7 @@
   "skinpart-mouth-weary": "Weary",
   "skinpart-mouth-serene": "Serene",
   "skinpart-mouth-alert": "Alert",
-  "skinpart-mouth-deadpan": "Deadpan"
+  "skinpart-mouth-deadpan": "Deadpan",
+  "skinpart-mouth-meek": "Meek",
+  "skinpart-mouth-traumatised": "Traumatised"
 }

@@ -144,6 +144,18 @@
           "shape": {
             "base": "expressions:eyebrow/deadpan"
           }
+        },
+        {
+          "code": "meek",
+          "shape": {
+            "base": "expressions:eyebrow/meek"
+          }
+        },
+        {
+          "code": "traumatised",
+          "shape": {
+            "base": "expressions:eyebrow/traumatised"
+          }
         }
       ]
     },
@@ -300,6 +312,18 @@
           "shape": {
             "base": "expressions:eye/deadpan"
           }
+        },
+        {
+          "code": "meek",
+          "shape": {
+            "base": "expressions:eye/meek"
+          }
+        },
+        {
+          "code": "traumatised",
+          "shape": {
+            "base": "expressions:eye/traumatised"
+          }
         }
       ]
     },
@@ -443,6 +467,18 @@
           "code": "deadpan",
           "shape": {
             "base": "expressions:mouth/deadpan"
+          }
+        },
+        {
+          "code": "meek",
+          "shape": {
+            "base": "expressions:mouth/meek"
+          }
+        },
+        {
+          "code": "traumatised",
+          "shape": {
+            "base": "expressions:mouth/traumatised"
           }
         }
       ]
