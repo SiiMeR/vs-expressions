@@ -156,6 +156,24 @@
           "shape": {
             "base": "expressions:eyebrow/traumatised"
           }
+        },
+        {
+          "code": "unbothered",
+          "shape": {
+            "base": "expressions:eyebrow/unbothered"
+          }
+        },
+        {
+          "code": "unimpressed",
+          "shape": {
+            "base": "expressions:eyebrow/unimpressed"
+          }
+        },
+        {
+          "code": "wry",
+          "shape": {
+            "base": "expressions:eyebrow/wry"
+          }
         }
       ]
     },
@@ -324,6 +342,24 @@
           "shape": {
             "base": "expressions:eye/traumatised"
           }
+        },
+        {
+          "code": "unbothered",
+          "shape": {
+            "base": "expressions:eye/unbothered"
+          }
+        },
+        {
+          "code": "unimpressed",
+          "shape": {
+            "base": "expressions:eye/unimpressed"
+          }
+        },
+        {
+          "code": "wry",
+          "shape": {
+            "base": "expressions:eye/wry"
+          }
         }
       ]
     },
@@ -479,6 +515,24 @@
           "code": "traumatised",
           "shape": {
             "base": "expressions:mouth/traumatised"
+          }
+        },
+        {
+          "code": "unbothered",
+          "shape": {
+            "base": "expressions:mouth/unbothered"
+          }
+        },
+        {
+          "code": "unimpressed",
+          "shape": {
+            "base": "expressions:mouth/unimpressed"
+          }
+        },
+        {
+          "code": "wry",
+          "shape": {
+            "base": "expressions:mouth/wry"
           }
         }
       ]

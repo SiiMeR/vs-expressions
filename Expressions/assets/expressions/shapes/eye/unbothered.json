@@ -1,0 +1,1036 @@
+{
+  "editor": {
+    "backDropShape": "C:/Users/Bruger/AppData/Roaming/Vintagestory/assets/game/shapes/entity/humanoid/seraph-hairless",
+    "collapsedPaths": ",Root/LowerArmROrigin,Root/LowerArmLOrigin",
+    "allAngles": false,
+    "entityTextureMode": true,
+    "singleTexture": false,
+    "vsFormatConverted": false
+  },
+  "textureWidth": 32,
+  "textureHeight": 76,
+  "textureSizes": {
+    "iris": [8, 8]
+  },
+  "textures": {
+    "parttexture": "seraph-for-eyes-black",
+    "iris": "red"
+  },
+  "elements": [
+    {
+      "name": "eyesroot2",
+      "from": [0.00523, 1.89991, -13.425],
+      "to": [0.00523, 1.89991, -13.425],
+      "rotationOrigin": [0.00523, 1.89991, -13.425],
+      "children": [
+        {
+          "name": "Eyes",
+          "from": [0, 0, 0],
+          "to": [0, 0, 0],
+          "rotationOrigin": [0, 0, 0],
+          "children": [
+            {
+              "name": "R_eye3",
+              "from": [0, 0, 0],
+              "to": [0, 0, 0],
+              "rotationOrigin": [0, 0, 0],
+              "children": [
+                {
+                  "name": "R_pupil3",
+                  "from": [-0.01, 0.15, 0.15],
+                  "to": [-0.01, 0.15, 0.15],
+                  "rotationOrigin": [-0.01, 0.15, 0.15],
+                  "children": [
+                    {
+                      "name": "shine large 1",
+                      "from": [-0.06437, 0.26787, 16.89085],
+                      "to": [0.03563, 0.46787, 17.09085],
+                      "rotationOrigin": [-0.025, 0.175, 21],
+                      "uv": [28.5, 4],
+                      "shade": true,
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [30, 4.5, 29.5, 5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [1, 0, 0, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [29, 4.5, 28.5, 5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 4.5, 29, 5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 4, 29, 4.5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 5, 29, 5.5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        }
+                      },
+
+                      "climateColorMap": "",
+                      "gradientShade": false,
+                      "renderPass": 0,
+                      "seasonColorMap": ""
+                    },
+                    {
+                      "name": "shine small 1",
+                      "from": [-0.06437, 0.20287, 16.74085],
+                      "to": [0.03563, 0.30287, 16.84085],
+                      "rotationOrigin": [-0.025, 0.05, 20.7],
+                      "uv": [29.5, 4.5],
+                      "shade": true,
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [31, 5, 30.5, 5.5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [1, 0, 0, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [30, 5, 29.5, 5.5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 5, 30, 5.5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 4.5, 30, 5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 5.5, 30, 6],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        }
+                      },
+
+                      "climateColorMap": "",
+                      "gradientShade": false,
+                      "renderPass": 0,
+                      "seasonColorMap": ""
+                    },
+                    {
+                      "name": "R pupil_geo",
+                      "from": [-0.04396, -0.13401, 16.46142],
+                      "to": [0.05604, 0.44099, 17.01142],
+                      "rotationOrigin": [-0.03, 0.075, 20.925],
+                      "uv": [0, 0],
+                      "shade": true,
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [1.5, 0.5, 1, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [1, 0, 0, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [0.5, 0.5, 0, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [1, 0.5, 0.5, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [1, 0, 0.5, 0.5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [1, 1, 0.5, 1.5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        }
+                      },
+                      "rotationX": 1,
+
+                      "climateColorMap": "",
+                      "gradientShade": false,
+                      "renderPass": 0,
+                      "seasonColorMap": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "R eye_geo",
+                  "from": [-0.03396, -0.0157, 16.46098],
+                  "to": [0.06604, 0.5343, 17.28598],
+                  "rotationOrigin": [-0.01, -0.125, 21.325],
+                  "uv": [28, 0],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#iris",
+                      "uv": [2.5, 1, 2, 2],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#iris",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#iris",
+                      "uv": [1, 1, 0.5, 2],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#iris",
+                      "uv": [2, 1, 1, 2],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#iris",
+                      "uv": [2, 0.5, 1, 1],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#iris",
+                      "uv": [2, 2, 1, 2.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 2,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "R eye_geo",
+                  "from": [-0.03396, -0.1657, 16.81098],
+                  "to": [0.06604, -0.0157, 17.28598],
+                  "rotationOrigin": [-0.01, -0.125, 21.325],
+                  "uv": [28, 0],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#iris",
+                      "uv": [1.5, 1, 1, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#iris",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#iris",
+                      "uv": [0.5, 1, 0, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#iris",
+                      "uv": [1, 1, 0.5, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#iris",
+                      "uv": [1, 0.5, 0.5, 1],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#iris",
+                      "uv": [1, 1.5, 0.5, 2],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 2,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0.3, 16.4],
+                  "to": [0, 0.45, 17.45],
+                  "rotationOrigin": [-0.1, 0.3, 15.9],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 14.5, 30, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14.5, 28.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14.5, 29, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14, 29, 14.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30, 15, 29, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 19,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0.65, 16.35],
+                  "to": [0, 0.8, 17.7],
+                  "rotationOrigin": [-0.1, 0.65, 15.85],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30.5, 14.5, 30, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14.5, 28.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14.5, 29, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14, 29, 14.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [30, 15, 29, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.1, 0.425, 18.35],
+                  "to": [0, 0.575, 18.8],
+                  "rotationOrigin": [-0.1, 0.425, 17.95],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14.5, 29.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14.5, 28.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 14.5, 29, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 14, 29, 14.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 15, 29, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 142.75,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.1, -0.475, 17.45],
+                  "to": [0, -0.325, 17.9],
+                  "rotationOrigin": [-0.1, -0.475, 17.05],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14.5, 29.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14.5, 28.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 14.5, 29, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 14, 29, 14.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 15, 29, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -139.25,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                }
+              ]
+            },
+            {
+              "name": "R_eye4",
+              "from": [0, 0, 15.75],
+              "to": [0, 0, 15.75],
+              "rotationOrigin": [0, 0, 15.75],
+              "children": [
+                {
+                  "name": "R_pupil4",
+                  "from": [-0.01, 0.15, -0.15],
+                  "to": [-0.01, 0.15, -0.15],
+                  "rotationOrigin": [-0.01, 0.15, -0.15],
+                  "children": [
+                    {
+                      "name": "shine large 1",
+                      "from": [-0.06437, 0.26787, -0.59085],
+                      "to": [0.03563, 0.46787, -0.39085],
+                      "rotationOrigin": [-0.025, 0.175, -4.5],
+                      "uv": [28.5, 4],
+                      "shade": true,
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [28.5, 4.5, 29, 5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [0, 0, 1, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 4.5, 30, 5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [29, 4.5, 29.5, 5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [29, 4, 29.5, 4.5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [29, 5, 29.5, 5.5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        }
+                      },
+
+                      "climateColorMap": "",
+                      "gradientShade": false,
+                      "renderPass": 0,
+                      "seasonColorMap": ""
+                    },
+                    {
+                      "name": "shine small 1",
+                      "from": [-0.06437, 0.20287, -0.74085],
+                      "to": [0.03563, 0.30287, -0.64085],
+                      "rotationOrigin": [-0.025, 0.05, -4.6],
+                      "uv": [29.5, 4.5],
+                      "shade": true,
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [29.5, 5, 30, 5.5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [0, 0, 1, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [30.5, 5, 31, 5.5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [30, 5, 30.5, 5.5],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [30, 4.5, 30.5, 5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [30, 5.5, 30.5, 6],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        }
+                      },
+
+                      "climateColorMap": "",
+                      "gradientShade": false,
+                      "renderPass": 0,
+                      "seasonColorMap": ""
+                    },
+                    {
+                      "name": "R pupil_geo",
+                      "from": [-0.04396, -0.13401, -1.01142],
+                      "to": [0.05604, 0.44099, -0.46142],
+                      "rotationOrigin": [-0.03, 0.075, -4.925],
+                      "uv": [0, 0],
+                      "shade": true,
+                      "faces": {
+                        "north": {
+                          "texture": "#parttexture",
+                          "uv": [0, 0.5, 0.5, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "east": {
+                          "texture": "#parttexture",
+                          "uv": [0, 0, 1, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "south": {
+                          "texture": "#parttexture",
+                          "uv": [1, 0.5, 1.5, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "west": {
+                          "texture": "#parttexture",
+                          "uv": [0.5, 0.5, 1, 1],
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "up": {
+                          "texture": "#parttexture",
+                          "uv": [0.5, 0, 1, 0.5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        },
+                        "down": {
+                          "texture": "#parttexture",
+                          "uv": [0.5, 1, 1, 1.5],
+                          "rotation": 90,
+                          "autoUv": false,
+                          "snapUv": false
+                        }
+                      },
+                      "rotationX": -1,
+
+                      "climateColorMap": "",
+                      "gradientShade": false,
+                      "renderPass": 0,
+                      "seasonColorMap": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "R eye_geo",
+                  "from": [-0.03396, -0.0157, -1.28598],
+                  "to": [0.06604, 0.5343, -0.46098],
+                  "rotationOrigin": [-0.01, -0.125, -5.325],
+                  "uv": [28, 0],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#iris",
+                      "uv": [0, 0.5, 0.5, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#iris",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#iris",
+                      "uv": [1.5, 0.5, 2, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#iris",
+                      "uv": [0.5, 0.5, 1.5, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#iris",
+                      "uv": [0.5, 0, 1.5, 0.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#iris",
+                      "uv": [0.5, 1.5, 1.5, 2],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -2,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "R eye_geo",
+                  "from": [-0.03396, -0.1657, -1.28598],
+                  "to": [0.06604, -0.0157, -0.81098],
+                  "rotationOrigin": [-0.01, -0.125, -5.325],
+                  "uv": [28, 0],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#iris",
+                      "uv": [1.5, 1, 1, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#iris",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#iris",
+                      "uv": [0.5, 1, 0, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#iris",
+                      "uv": [1, 1, 0.5, 1.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#iris",
+                      "uv": [1, 0.5, 0.5, 1],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#iris",
+                      "uv": [1, 1.5, 0.5, 2],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -2,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0.3, -1.45],
+                  "to": [0, 0.45, -0.4],
+                  "rotationOrigin": [-0.1, 0.3, 0.1],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 14.5, 29, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14.5, 30.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14.5, 30, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14, 30, 14.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15, 30, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -19,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.075, 0.65, -1.7],
+                  "to": [0, 0.8, -0.35],
+                  "rotationOrigin": [-0.1, 0.65, 0.15],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 14.5, 29, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [30, 14.5, 30.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14.5, 30, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14, 30, 14.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15, 30, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.1, 0.425, -2.8],
+                  "to": [0, 0.575, -2.35],
+                  "rotationOrigin": [-0.1, 0.425, -1.95],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 14.5, 29, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 14.5, 30, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14.5, 29.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14, 29.5, 14.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15, 29.5, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -142.75,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "eyelid r",
+                  "from": [-0.1, -0.475, -1.9],
+                  "to": [0, -0.325, -1.45],
+                  "rotationOrigin": [-0.1, -0.475, -1.05],
+                  "uv": [28, 6],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#parttexture",
+                      "uv": [28.5, 14.5, 29, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#parttexture",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#parttexture",
+                      "uv": [29.5, 14.5, 30, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14.5, 29.5, 15],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#parttexture",
+                      "uv": [29, 14, 29.5, 14.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#parttexture",
+                      "uv": [29, 15, 29.5, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 139.25,
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stepParentName": "Head",
+      "attachmentpoints": [
+        {
+          "code": "Eyes2",
+          "posX": "1.3",
+          "posY": "3.5",
+          "posZ": "2.5",
+          "rotationX": "0",
+          "rotationY": "-90",
+          "rotationZ": "0"
+        }
+      ]
+    }
+  ],
+  "animations": []
+}

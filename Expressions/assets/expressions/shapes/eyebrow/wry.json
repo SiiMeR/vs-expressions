@@ -1,0 +1,291 @@
+{
+  "editor": {
+    "backDropShape": "C:/Users/Bruger/AppData/Roaming/Vintagestory/assets/game/shapes/entity/humanoid/seraph-hairless",
+    "collapsedPaths": ",Root/LowerArmROrigin,Root/LowerArmLOrigin",
+    "allAngles": false,
+    "entityTextureMode": true,
+    "singleTexture": false,
+    "vsFormatConverted": false
+  },
+  "textureWidth": 48,
+  "textureHeight": 48,
+  "textureSizes": {},
+  "textures": {
+    "hair": "entity/humanoid/seraphskinparts/hair/lightgray"
+  },
+  "elements": [
+    {
+      "name": "eyesroot2",
+      "from": [-0.04115, 3.01782, 3.57926],
+      "to": [-0.04115, 3.01782, 3.57926],
+      "rotationOrigin": [-0.04115, 3.01782, 3.57926],
+      "children": [
+        {
+          "name": "Eyesbrow",
+          "from": [0, 0, 0],
+          "to": [0, 0, 0],
+          "rotationOrigin": [0, 0, 0],
+          "children": [
+            {
+              "name": "R_eyebrow_3",
+              "from": [0, 0, 0],
+              "to": [0, 0, 0],
+              "rotationOrigin": [0, 0, 0],
+              "rotationX": -13.5,
+              "children": [
+                {
+                  "name": "R eyebrow 2",
+                  "from": [-0.05187, -0.17335, -0.6734],
+                  "to": [0.04813, 0.12665, 0.8266],
+                  "rotationOrigin": [-0.05187, -0.17335, -0.0734],
+                  "uv": [28, 12.5],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#hair",
+                      "uv": [28, 16, 28.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#hair",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#hair",
+                      "uv": [28, 15.5, 28.5, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#hair",
+                      "uv": [26.5, 15.5, 28, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#hair",
+                      "uv": [26.5, 15, 28, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#hair",
+                      "uv": [26.5, 16, 28, 16.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 23.7476,
+                  "rotationY": -0.28818,
+                  "rotationZ": -0.95758,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "R eyebrow 2",
+                  "from": [-0.05187, -0.09835, -0.6984],
+                  "to": [0.04813, 0.20165, 0.3016],
+                  "rotationOrigin": [-0.05187, -0.09835, -0.0984],
+                  "uv": [28, 12.5],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#hair",
+                      "uv": [27.5, 15.5, 28, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#hair",
+                      "uv": [1, 0, 0, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#hair",
+                      "uv": [27.5, 16, 28, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#hair",
+                      "uv": [26.5, 16, 27.5, 16.5],
+                      "rotation": 180,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#hair",
+                      "uv": [26.5, 15.5, 27.5, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#hair",
+                      "uv": [26.5, 16.5, 27.5, 17],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": 32.7455,
+                  "rotationY": -0.52983,
+                  "rotationZ": -0.40991,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                }
+              ]
+            },
+            {
+              "name": "R_eyebrow_4",
+              "from": [-0.05187, -0.01794, -1.27926],
+              "to": [-0.05187, -0.01794, -1.27926],
+              "rotationOrigin": [-0.05187, -0.01794, -1.27926],
+              "rotationX": 13.5,
+              "children": [
+                {
+                  "name": "R eyebrow 2",
+                  "from": [0, -0.375, -1.7],
+                  "to": [0.1, -0.075, -0.2],
+                  "rotationOrigin": [0, -0.375, -0.8],
+                  "uv": [28, 12.5],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#hair",
+                      "uv": [28, 16, 28.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#hair",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#hair",
+                      "uv": [28, 15.5, 28.5, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#hair",
+                      "uv": [26.5, 15.5, 28, 16],
+                      "rotation": 180,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#hair",
+                      "uv": [26.5, 15, 28, 15.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#hair",
+                      "uv": [26.5, 16, 28, 16.5],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -23.7476,
+                  "rotationY": 0.28818,
+                  "rotationZ": -0.95758,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                },
+                {
+                  "name": "R eyebrow 2",
+                  "from": [0, -0.3, -1.175],
+                  "to": [0.1, 0, -0.175],
+                  "rotationOrigin": [0, -0.3, -0.775],
+                  "uv": [28, 12.5],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#hair",
+                      "uv": [27.5, 15.5, 28, 16],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "east": {
+                      "texture": "#hair",
+                      "uv": [0, 0, 1, 1],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "south": {
+                      "texture": "#hair",
+                      "uv": [27.5, 16, 28, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "west": {
+                      "texture": "#hair",
+                      "uv": [26.5, 16, 27.5, 16.5],
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "up": {
+                      "texture": "#hair",
+                      "uv": [26.5, 15.5, 27.5, 16],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    },
+                    "down": {
+                      "texture": "#hair",
+                      "uv": [26.5, 16.5, 27.5, 17],
+                      "rotation": 90,
+                      "autoUv": false,
+                      "snapUv": false
+                    }
+                  },
+                  "rotationX": -32.7455,
+                  "rotationY": 0.52983,
+                  "rotationZ": -0.40991,
+
+                  "climateColorMap": "",
+                  "gradientShade": false,
+                  "renderPass": 0,
+                  "seasonColorMap": ""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stepParentName": "Head",
+      "attachmentpoints": [
+        {
+          "code": "Eyes2",
+          "posX": "1.3",
+          "posY": "3.5",
+          "posZ": "2.5",
+          "rotationX": "0",
+          "rotationY": "-90",
+          "rotationZ": "0"
+        }
+      ]
+    }
+  ],
+  "animations": []
+}
